@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_dialog_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/video_play_login_rl"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:background="@drawable/loading_dialog_bgl"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:id="@+id/login_dialog_login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="手机登录"
+                android:textColor="@color/white"
+                android:background="@drawable/login_btn_bg"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/login_dialog_login_btn"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_marginRight="20dp">
+
+                    <ImageButton
+                        android:id="@+id/video_play_login_qq_ib"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/qq_yes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/video_play_login_qq_ib"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="QQ登录"
+                        android:textSize="16sp"
+                        android:textColor="#5d5d5d"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/video_play_login_wechat_ib"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/logo_wechat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/video_play_login_wechat_ib"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="微信登录"
+                        android:textSize="16sp"
+                        android:textColor="#5d5d5d"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp">
+
+                    <ImageButton
+                        android:id="@+id/video_play_login_weibo_ib"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/weibo_yes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/video_play_login_weibo_ib"
+                        android:layout_marginTop="5dp"
+                        android:text="微博登录"
+                        android:textSize="16sp"
+                        android:textColor="#5d5d5d"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

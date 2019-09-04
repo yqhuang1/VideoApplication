@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg_gray"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioGroup
+                android:id="@+id/main_tab_group"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bottom1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/main_tab_home_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/main_tab_home"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/home_bt_down"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_tab_setting_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/main_tab_setting"
+                        android:layout_width="56dp"
+                        android:layout_height="58dp"
+                        android:background="@drawable/settings_bt"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5" />
+                </LinearLayout>
+            </RadioGroup>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

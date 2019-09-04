@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fragment_activity_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.li.videoapplication.View.grid.util.DynamicHeightImageView
+            android:id="@+id/fragment_activity_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="center"
+            android:src="@drawable/radio_fra_bottom_bg" />
+
+        <TextView
+            android:id="@+id/fragment_activity_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_activity_item_img"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_shape1"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="多动标题活动标题"
+            android:textColor="@color/list_bg"
+            android:textSize="12sp" />
+
+        <com.li.videoapplication.View.grid.util.DynamicHeightImageView
+            android:id="@+id/fragment_activity_item_border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/fragment_activity_item_title"
+            android:background="@drawable/round_border"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_pic"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

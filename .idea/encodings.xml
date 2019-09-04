@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/li/videoapplication/Adapter/RefreshRecyclerAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/li/videoapplication/View/RefreshItemDecoration.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/li/videoapplication/View/SimpleViewPagerIndicator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/li/videoapplication/View/StickyNavLayout.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/li/videoapplication/activity/BaseActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/li/videoapplication/callback/ListenerConstans.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/li/videoapplication/callback/ViewPagerListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/li/videoapplication/utils/StatusBarUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/anim/slide_in_left.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/anim/slide_in_right.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/anim/slide_out_left.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/anim/slide_out_right.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values-v19" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values/ids.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values/ids_sticky_nav_Llayout.xml" charset="UTF-8" />
+  </component>
+</project>

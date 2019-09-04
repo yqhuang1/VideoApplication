@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="fm_page_back">#fff2f2f2</color>
+    <color name="fm_logo_text_color">#ff7f7f7f</color>
+    <color name="fm_line">#b2b2b2</color>
+    <color name="buttom_top">#1e1e1e</color>
+    <color name="buttom_centre">#303030</color>
+    <color name="buttom_buttom">#000000</color>
+    <color name="bg_gray">#FFE3E3E7</color>
+    <color name="whiteGray">#ffC9CACB</color>
+
+
+
+
+</resources>

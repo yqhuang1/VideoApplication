@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_body_bg">
+
+    <RelativeLayout
+        android:id="@+id/modify_title_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/modify_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_btn"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/fragment_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改密码"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/darkgray"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/modify_form_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/modify_title_rl"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/stroke"
+        android:padding="1dp">
+
+        <EditText
+            android:id="@+id/modify_beginning_psd_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:hint="请输入旧密码"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/darkgray" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/modify_beginning_psd_et"
+            android:background="@color/darkgray" />
+
+        <EditText
+            android:id="@+id/modify_new_psd_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/modify_beginning_psd_et"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:hint="请输入新密码"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/darkgray" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/modify_new_psd_et"
+            android:background="@color/darkgray" />
+
+        <EditText
+            android:id="@+id/modify_renew_psd_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/modify_new_psd_et"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:hint="请确认新密码"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/darkgray" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/modify_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/modify_form_rl"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/main_title_bg"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/stroke">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/video_item_img"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/record_item_select_state_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/unselect_bg"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/title_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:background="#40000000"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/video_item_playcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:drawablePadding="4dp"
+                    android:drawableLeft="@drawable/play"
+                    android:textSize="12sp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="4dp"
+                    android:textColor="@color/white"/>
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/video_item_flower"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textSize="12sp"-->
+                        <!--android:text="32131"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:drawableLeft="@drawable/main_love"-->
+                        <!--/>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/video_item_comment"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textSize="12sp"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:text="32131"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_toRightOf="@+id/video_item_flower"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:drawableLeft="@drawable/commet"-->
+                        <!--/>-->
+
+                    <TextView
+
+                        android:id="@+id/video_item_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="0"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="5dp"
+                        />
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/video_item_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/collect_item_gv_item_check_img"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:text=""
+        android:background="#90000000"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

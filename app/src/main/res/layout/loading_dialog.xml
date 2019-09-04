@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/home_loadind_rl"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@drawable/loading_dialog_bgl"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/loading_iv_rl"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/loading_inner_icon" />
+
+            <ImageView
+                android:id="@+id/home_loading_gif"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/loading_gif" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:text="加载中..."
+            android:layout_below="@+id/loading_iv_rl"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

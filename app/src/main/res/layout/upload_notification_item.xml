@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="3dp">
+
+    <ImageView
+        android:id="@+id/upload_notification_Image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:src="@drawable/tubiao" />
+
+    <TextView
+        android:id="@+id/upload_notification_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/upload_notification_Progress"
+        android:layout_alignLeft="@+id/upload_notification_Progress"
+        android:layout_marginBottom="5dp"
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/upload_notification_FinishText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/upload_notification_Progress"
+        android:layout_below="@id/upload_notification_Progress"
+        android:layout_marginTop="5dp"
+        android:text="0M /0M "
+        android:textColor="@color/gray0" />
+
+    <TextView
+        android:id="@+id/upload_notification_Percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/upload_notification_Progress"
+        android:layout_below="@id/upload_notification_Progress"
+        android:layout_marginTop="5dp"
+        android:text="XX%"
+        android:textColor="@color/gray0" />
+
+    <ProgressBar
+        android:id="@+id/upload_notification_Progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/upload_notification_Image"
+        android:progressDrawable="@drawable/progressbar_style" />
+
+</RelativeLayout>

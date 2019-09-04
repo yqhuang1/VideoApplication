@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.li.videoapplication"
+    android:versionCode="20151105"
+    android:versionName="V1.1.7">
+
+    <!--<uses-sdk android:minSdkVersion="14" />-->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 极光推送 -->
+    <permission
+        android:name="com.li.videoapplication.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.li.videoapplication.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- android:name="com.SRApplication" -->
+    <!-- android:name="com.li.videoapplication.utils.MyApplication" -->
+    <application
+        android:name=".utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/tubiao"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+            <!-- android:theme="@android:style/Theme.NoTitleBar.Fullscreen"（取消顶部的状态栏，右滑入方式） -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchResultActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_search_result"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VideoPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_video_play"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.GiftDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_gift_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.IntroduceActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_personal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PersonalInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_personal_info"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_about_us"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ModifyPsdActivity"
+            android:label="@string/title_activity_feed_back"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FoundGameActivity"
+            android:label="@string/title_activity_feed_back"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PlayerShowActivity"
+            android:label="@string/title_activity_feed_back"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MasterColumnActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ExpertActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MasterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RelaxeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GameCircleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GameCircleDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyAttentionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyFansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShowPointActivity"
+            android:label="@string/title_activity_feed_back"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MissionCenterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".activity.MoreRecommendActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".activity.FavorRecommendActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".activity.OfflineDownloadActivity"
+            android:label="@string/title_activity_offline_download"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".activity.RecommendActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".activity.ActivityDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_detail_activity"
+            android:screenOrientation="portrait" />
+        <!-- theme用AppTheme -->
+
+
+        <!--
+        敏捷开发部分>
+        <activity android:name="com.umeng.fb.ui.SendFeedback"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.umeng.fb.ui.FeedbackConversations"/>
+        <activity android:name="com.umeng.fb.ui.FeedbackConversation"
+            android:configChanges="keyboard"/
+        -->
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_APPKEY" -->
+        <!-- android:value="5450f180fd98c5a66902c674" /> -->
+
+
+        <!--
+        android:screenOrientation="portrait"
+        android:launchMode="singleTask"
+        android:clearTaskOnLaunch="true"
+        -->
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 调用新浪原生SDK，需要注册的回调activity -->
+        <activity
+            android:name="cn.sharesdk.sina.weibo.SinaActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--
+            activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" /
+        -->
+        <activity
+            android:name=".activity.DownLoadActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_down_load"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewAssortActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_new_assort"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VideoEditorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchGameName"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchLifeName"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchGameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RecordActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_down_load"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GameActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_game"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VideoManagerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UsingAgreementActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FunctionSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!--
+       敏捷开发部分
+       <activity android:name="com.umeng.fb.ui.SendFeedback"
+                 android:windowSoftInputMode="adjustResize"/>
+       <activity android:name="com.umeng.fb.ui.FeedbackConversations"/>
+       <activity android:name="com.umeng.fb.ui.FeedbackConversation"
+                 android:configChanges="keyboard"/>
+       <meta-data android:value="52ff4556240bce38003086" android:name="UMENG_APPKEY"/>
+
+       <activity android:name="com.ryan.core.activity.HistoryActivity"
+                 android:screenOrientation="portrait"
+                 android:configChanges="keyboardHidden|orientation"
+                 android:theme="@style/NoTitleBar"
+               />
+        -->
+
+        <activity
+            android:name=".activity.MyGiftActivity"
+            android:label="@string/title_activity_my_gift"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".activity.GiftAtuoDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.fmscreenrecord.activity.MainActivity"
+            android:label="@string/fm_app_main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.fmscreenrecord.activity.ScreenRecord50"
+            android:label="@string/fm_app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.fmscreenrecord.activity.ActivityAlertDialog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity
+            android:name="com.fmscreenrecord.activity.FileDirectorySelect"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.fmscreenrecord.activity.SettingActivity"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+        <activity
+            android:name="com.fmscreenrecord.activity.SettingAdvancedActivity"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+        <activity
+            android:name=".utils.AlertDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/download_dialog" />
+        <activity
+            android:name="com.fmscreenrecord.activity.UseHelpActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- PackageInfoGridview -->
+        <activity
+            android:name="com.fmscreenrecord.activity.PackageInfoGridview"
+            android:label="选择游戏列表"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.fmscreenrecord.activity.StartBtnActivity"
+            android:label="测试启动页面"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="BDAPPID"
+            android:value="6084125" />
+        <meta-data
+            android:name="BDAPPKEY"
+            android:value="LZh2Hds7Z3tEzUfnU6rT2w63fbDGP7iS" />
+
+        <activity
+            android:name=".download.DownloadListActivity"
+            android:label="@string/download_manager"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zxt.download2.action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 移动云AppX SDK -->
+        <activity android:name="com.baidu.appx.ui.BDInnerBrowser" />
+
+        <receiver android:name="com.baidu.appx.app_download.CompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+                <!-- 注意！！ 这句必须要加，否则接收不到安装完成广播 -->
+            </intent-filter>
+        </receiver>
+
+        <!-- 自动更新SDK -->
+        <activity
+            android:name="com.baidu.autoupdatesdk.ConfirmDialoigActivity"
+            android:exported="false"
+            android:screenOrientation="sensor"
+            android:theme="@style/bdp_update_dialog_style_fullscreen" />
+
+        <receiver
+            android:name="com.baidu.autoupdatesdk.receiver.BDBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_NEW_UPDATE" />
+                <action android:name="com.baidu.autoupdatesdk.ACTION_DOWNLOAD_COMPLETE" />
+                <action android:name="com.baidu.autoupdatesdk.ACTION_NEW_AS" />
+                <action android:name="com.baidu.autoupdatesdk.ACTION_AS_DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.umeng.fb.ConversationActivity" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5450f180fd98c5a66902c674" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="d75f6bf2b18d152f8c53c02f68963095" />
+
+        <!-- 友盟推送 -->
+        <!-- 监听通知点击或者忽略处理的广播 -->
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false" />
+
+        <!-- 监听开机运行、网络连接变化、卸载的广播 -->
+        <receiver
+            android:name="com.umeng.message.SystemReceiver"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 监听消息到达的广播 -->
+        <receiver
+            android:name="com.umeng.message.MessageReceiver"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 监听宿主选举的广播 -->
+        <receiver
+            android:name="com.umeng.message.ElectionReceiver"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_RESULT_V4" />
+
+                <category android:name="umeng" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 监听注册的广播 -->
+        <!-- 【应用包名】字符串需要替换成本应用的应用包名 -->
+        <receiver
+            android:name="com.umeng.message.RegistrationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.li.videoapplication.intent.action.COMMAND" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.UmengMessageBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <!-- 友盟推送 -->
+        <!-- Umeng的长连服务，用来建立推送的长连接的 -->
+        <!-- 【应用包名】字符串需要替换成本应用的应用包名 -->
+        <service
+            android:name="com.umeng.message.UmengService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="com.li.videoapplication.intent.action.START" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.li.videoapplication.intent.action.COCKROACH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING_V4" />
+
+                <category android:name="umeng" />
+            </intent-filter>
+        </service>
+
+        <!-- Umeng的消息接收服务 -->
+        <service
+            android:name="com.umeng.message.UmengIntentService"
+            android:process=":push" />
+
+        <!-- Umeng的消息路由服务 -->
+        <service
+            android:name="com.umeng.message.UmengMessageIntentReceiverService"
+            android:exported="true"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.android.agoo.client.ElectionReceiverService" />
+            </intent-filter>
+        </service>
+
+        <!-- v2.4.1添加的Service，Umeng的消息接收后的处理服务 -->
+        <service
+            android:name="com.umeng.message.UmengMessageCallbackHandlerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.umeng.messge.registercallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.unregistercallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.message.handler.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.autoupdate.handler.action" />
+            </intent-filter>
+        </service>
+
+        <!-- 画中画服务 -->
+        <service android:name="com.fmscreenrecord.frontcamera.FrontCameraService" />
+
+        <!-- V1.3.0添加的service，负责下载通知的资源 -->
+        <service android:name="com.umeng.message.UmengDownloadResourceService" />
+        <service android:name=".Service.DownLoadService" />
+        <service android:name=".Service.ODLoadVideoService" />
+        <!-- 视频上传服务 -->
+        <service android:name=".Service.UploadVideoService" />
+        <service android:name="com.fmscreenrecord.service.ScreenRECService" />
+        <service android:name="com.fmscreenrecord.service.FloatViewService" />
+
+        <activity android:name=".activity.EventBusSendActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,288 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#243849"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:background="@color/main_title_bg">
+
+            <TextView
+                android:id="@+id/main_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:paddingTop="8dp"
+                android:text="手游视界"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/main_title_searchLayout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="65dp"
+                android:layout_marginRight="65dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/search_title_store"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/main_title_searchIv"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:padding="7dp"
+                    android:src="@drawable/searchfoundgray" />
+
+                <TextView
+                    android:id="@+id/main_title_searchTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/main_title_searchIv"
+                    android:text="请输入游戏名、视频名"
+                    android:textColor="@color/search_et_bg"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/main_persion"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:alpha="100"
+                android:background="@drawable/search_btn"
+                android:onClick="OpenLeftMenu"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_persional_ic_white" />
+
+            <ImageView
+                android:id="@+id/main_notice"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignRight="@+id/main_persion"
+                android:layout_alignTop="@+id/main_persion"
+                android:layout_margin="13dp"
+                android:background="@drawable/message_notice_white"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/main_video"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:alpha="100"
+                android:background="@drawable/search_btn"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_record_ic_white" />
+
+            <ImageView
+                android:id="@+id/main_title_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/darkgray"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/main_network_notice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/title_layout"
+            android:background="#f8ffd5"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/notice_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="视界那么大，联网才能看~"
+                android:textColor="#46463d"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_viewpage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/main_tab_layout"
+            android:layout_below="@+id/main_network_notice_layout"
+            android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+
+        <!--<include layout="@layout/main_bottom_layout" />-->
+        <ImageView
+            android:id="@+id/main_bottom_projection"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_above="@+id/main_tab_layout"
+            android:background="@color/darkgray"
+            android:visibility="visible" />
+
+
+        ////////////////第一层tab////////////////////////
+
+        <LinearLayout
+            android:id="@+id/main_tab_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/main_bottom_main"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:scaleType="fitXY">
+                <!-- android:clickable="false" 是为了防止ImageButton截取了触摸事件 ，这里事件要给它的上一级linearlayout-->
+                <ImageButton
+                    android:id="@+id/main_bottom_main_ib"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bottom_home_bg_select"
+                    android:clickable="false" />
+
+                <TextView
+                    android:id="@+id/main_bottom_main_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="首 页"
+                    android:textColor="@color/red"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/main_bottom_discover"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:scaleType="fitXY">
+
+                <ImageButton
+                    android:id="@+id/main_bottom_discover_ib"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bottom_discover_bg_nomal"
+                    android:clickable="false" />
+
+                <TextView
+                    android:id="@+id/main_bottom_discover_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发 现"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_bottom_gift"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:scaleType="fitXY">
+
+                <ImageButton
+                    android:id="@+id/main_bottom_gift_ib"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bottom_gift_bg_nomal"
+                    android:clickable="false" />
+
+                <TextView
+                    android:id="@+id/main_bottom_gift_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="礼 包"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_bottom_activity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:scaleType="fitXY">
+
+                <ImageButton
+                    android:id="@+id/main_bottom_activity_ib"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bottom_activity_bg_nomal"
+                    android:clickable="false" />
+
+                <TextView
+                    android:id="@+id/main_bottom_activity_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活 动"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/activity_my_left_menu"
+        android:name="com.li.videoapplication.fragment.PersionalFragment"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:tag="LEFT" />
+
+</android.support.v4.widget.DrawerLayout>
+

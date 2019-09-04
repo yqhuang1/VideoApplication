@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="fm_video_editor_margin">50dp</dimen>
+
+</resources>

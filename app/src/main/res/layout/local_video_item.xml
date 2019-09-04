@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f5f7"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/local_video_item_delete_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#00000000"
+        android:button="@null"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/local_video_flag_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/stroke"
+            android:padding="2dp">
+
+            <RelativeLayout
+                android:id="@+id/flag_layout"
+                android:layout_width="160dp"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/local_video_item_flag"
+                    android:layout_width="160dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/radio_fra_bottom_bg"
+                    android:padding="0dp" />
+
+                <RelativeLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/local_video_item_flag"
+                    android:background="#40000000">
+
+                    <TextView
+                        android:id="@+id/local_video_item_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:text="00:00"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/local_video_item_play"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/video_play_src"
+                    android:clickable="false" />
+
+                <ImageView
+                    android:id="@+id/local_video_item_check"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/local_video_item_flag"
+                    android:layout_alignRight="@+id/local_video_item_flag"
+                    android:background="@drawable/btn_check"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/local_video_item_record_time"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_alignLeft="@+id/flag_layout"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/flag_layout"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="2015-07-10 10:22"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/local_video_item_size"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/flag_layout"
+                android:layout_below="@+id/flag_layout"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="00M"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/local_video_flag_layout">
+
+            <TextView
+                android:id="@+id/local_video_item_title"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:maxLines="2"
+                android:text="标题"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/local_video_item_rename"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/renamebtn" />
+
+
+            <TextView
+                android:id="@+id/local_video_item_share"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/corner_red_stroke"
+                android:gravity="center"
+                android:text="分 享"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/local_video_item_edit"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/corner_white_stroke"
+                android:gravity="center"
+                android:text="编 辑"
+                android:textColor="#fb3d2e"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

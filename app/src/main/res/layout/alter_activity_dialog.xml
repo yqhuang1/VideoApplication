@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alter_dialog_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/alter_activity_dialog_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/alter_activity_dialog_backTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tc" />
+
+        <TextView
+            android:id="@+id/alter_activity_dialog_msg"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:text="@string/app_wechat"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/alter_activity_dialog_copyCB"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/alter_activity_dialog_msg"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/alter_activity_dialog_goneCB"
+            android:background="#00000000"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/alter_activity_dialog_goneCB"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/alter_activity_dialog_backTV"
+            android:layout_alignRight="@+id/alter_activity_dialog_backTV"
+            android:background="#00000000"
+            android:button="@null" />
+    </RelativeLayout>
+
+</LinearLayout>

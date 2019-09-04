@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fm_activity_bg"
+    android:orientation="vertical" >
+    
+    <!--  
+	<ListView 
+	    android:id="@+id/listId"
+	    android:layout_width="match_parent"
+	    android:layout_height="500dp"
+	    ></ListView>-->
+	
+	<GridView  
+	    android:id="@+id/gridview"  
+	    android:layout_width="fill_parent"   
+	    android:layout_height="fill_parent"  
+	    android:numColumns="2"  
+	    android:verticalSpacing="10dp"  
+	    android:horizontalSpacing="10dp"  
+	    android:columnWidth="90dp"  
+	    android:stretchMode="columnWidth"  
+	    android:gravity="center"  
+	    android:layout_margin="5dp"
+	/>  
+	
+	<TextView
+          android:id="@+id/local_no_video"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+           android:visibility="invisible"
+          android:text="视频列表为空，试试录制功能"
+          android:textColor="@color/black_75_transparent"
+          android:textSize="15sp" 
+            />
+    
+</FrameLayout>

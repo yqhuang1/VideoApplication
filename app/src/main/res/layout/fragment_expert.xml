@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_body_bg"
+    tools:context=".fragment.UserFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fragment_expert_rank_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您当前在等级达人榜的排名为:10名"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:textColor="@color/persion_title_color"
+        android:textSize="10sp"/>
+
+
+    <com.li.videoapplication.View.RefreshListView
+        android:id="@+id/expert_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@null"
+        android:scrollbars="none"
+        android:divider="@null"
+        ></com.li.videoapplication.View.RefreshListView>
+
+</LinearLayout>

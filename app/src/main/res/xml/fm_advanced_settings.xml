@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        android:title="@string/fm_screenshot_setting"
+        android:key="setting"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+         <PreferenceCategory
+            android:title="高级设置">
+
+       <CheckBoxPreference 
+                        android:title="使用高级设置参数"
+                        android:key="use_debug"
+                        android:summary="选上，则使用以下调试参数"
+                        android:defaultValue="false"/>
+       
+  	 <CheckBoxPreference android:title="是否使用GPU"
+        	             android:key="video_draw"
+       	                 android:summary="选择，则使用GPU"
+         	             android:defaultValue="false"/>
+               
+        <ListPreference android:title="@string/fm_save_image_format"
+                        android:key="save_format"
+                        android:entryValues="@array/fm_image_format"
+                        android:entries="@array/fm_image_format"
+                        android:summary="@string/fm_image_format_summary"
+                />
+        
+        <ListPreference 
+                        android:title="@string/fm_where_use"
+                        android:key="where_use"
+                        android:entryValues="@array/fm_where_use_array"
+                        android:entries="@array/fm_where_use_array"
+                        android:summary="@string/fm_where_use_tip"
+                />
+         <ListPreference
+		                android:title="@string/fm_video_encoder"
+		                android:key="video_encoder"
+		                android:entryValues="@array/fm_video_encoder_value"
+		                android:summary="@string/fm_video_encoder_tip"
+		                android:entries="@array/fm_video_encoder_array"
+		                android:defaultValue="0"
+                />
+       
+        <ListPreference
+		                android:title="@string/fm_video_quality"
+		                android:key="video_quality"
+		                android:entryValues="@array/fm_video_quality_value"
+		                android:summary="@string/fm_video_quality_tip"
+		                android:entries="@array/fm_video_quality_array"
+		                android:defaultValue="2"
+                />
+       
+       <ListPreference
+		                android:title="@string/fm_audio_quality"
+		                android:key="audio_quality"
+		                android:entryValues="@array/fm_audio_quality_value"
+		                android:entries="@array/fm_audio_quality_array"
+		                android:summary="@string/fm_audio_quality_tip"
+		                android:defaultValue="2"
+                />
+       
+    <!--     <Preference android:title="@string/language"
+                    android:key="language"
+                    android:summary="English"/>
+         
+        <Preference android:title="@string/vote_this_app"
+                    android:key="vote_this_app"
+                    android:summary="@string/vote_comment_tip"/>
+         <Preference android:title="@string/device_code"
+                    android:key="mobile_device_code"
+                    android:summary=""/> --> 
+    </PreferenceCategory>
+</PreferenceScreen>

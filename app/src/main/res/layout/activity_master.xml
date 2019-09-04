@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_body_bg">
+
+    <RelativeLayout
+        android:id="@+id/activity_master_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/activity_master_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_btn"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/fragment_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="大神信息"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/darkgray"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+    ///////////////////大神更新////////////////////////
+
+    <com.li.videoapplication.View.RefreshListView
+        android:id="@+id/activity_master_video_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_master_title_layout"
+        android:cacheColorHint="@null"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    ///////////////////大神留言列表////////////////////////
+
+    <com.li.videoapplication.View.RefreshListView
+        android:id="@+id/activity_master_message_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_master_comment_layout"
+        android:layout_below="@+id/activity_master_title_layout"
+        android:background="@color/white"
+        android:cacheColorHint="@null"
+        android:divider="#cacaca"
+        android:dividerHeight="1px"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    ///////////////////评论布局////////////////////////
+
+    <LinearLayout
+        android:id="@+id/activity_master_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/comment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/activity_master_gridview_face"
+            android:background="#e6e5e5"
+            android:clickable="false">
+
+            <TextView
+                android:id="@+id/activity_master_play_sumbit"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="#8c8c8c"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/activity_master_comment_edt"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/activity_master_play_sumbit"
+                android:layout_toRightOf="@+id/activity_master_comment_face_btn"
+                android:background="@drawable/loading_dialog_bgl"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="我来点评"
+                android:lines="3"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/darkgray"
+                android:textCursorDrawable="@drawable/cursor_shape"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/activity_master_comment_face_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/face_nomal" />
+
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/activity_master_gridview_face"
+            android:layout_width="fill_parent"
+            android:layout_height="230dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:numColumns="7"
+            android:padding="5dp"
+            android:visibility="gone"></GridView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector_pic"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/gift_item_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/gift_item_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:id="@+id/gift_item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/gift_item_getBtn_ll"
+                android:layout_toRightOf="@+id/gift_item_img"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gift_item_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:singleLine="true"
+                    android:text="礼包名称"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="剩余数量:"
+                        android:textColor="#80000000"
+                        android:textSize="10sp" />
+                    <!--<ProgressBar-->
+                    <!--android:visibility="visible"-->
+                    <!--android:id="@+id/gift_item_progressbar"-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="5dp"-->
+                    <!--style="@style/progressBarHorizontal_color"-->
+                    <!---->
+                    <!--android:progress="30"/>-->
+                    <ProgressBar
+                        android:id="@+id/gift_item_progressbar"
+                        style="@style/progressBarHorizontal_color"
+                        android:layout_width="80dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:max="100"
+                        android:progress="0" />
+
+
+                    <!--style="?android:attr/progressBarStyleHorizontal"-->
+                    <TextView
+                        android:id="@+id/gift_item_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:padding="2dp"
+                        android:text="XX%"
+                        android:textColor="@color/green"
+                        android:textSize="12sp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/gift_item_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="礼包内容"
+                    android:textColor="#80000000"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gift_item_getBtn_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <Button
+                    android:id="@+id/gift_item_getBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/corner_red_stroke"
+                    android:focusable="false"
+                    android:text="领取"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="@color/line" />
+
+</LinearLayout>

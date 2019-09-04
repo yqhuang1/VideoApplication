@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteGray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/search_game_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_btn"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/fragment_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择游戏"
+            android:textColor="@color/upload_text_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/darkgray"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="#f6f6f6">
+
+        <LinearLayout
+            android:id="@+id/fragment_search_et_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/search_store">
+
+            <EditText
+                android:id="@+id/search_edt"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="31"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="请输入搜索内容"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/whiteGray" />
+
+            <LinearLayout
+                android:id="@+id/cancel_layout"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/cancel_button" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/fragment_search_et_iv"
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="1dp"
+                android:background="@color/whiteGray" />
+
+            <ImageView
+                android:id="@+id/search_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/search" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/search_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"></ListView>
+
+</LinearLayout>

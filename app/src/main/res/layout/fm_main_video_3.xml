@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/fm_activity_bg"
+  android:orientation="vertical"
+>
+    
+    <LinearLayout
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+	>
+  <GridView  
+	    android:id="@+id/gridview_ext"  
+	    android:layout_width="fill_parent"   
+	    android:layout_height="fill_parent"  
+	    android:numColumns="2"  
+	    android:verticalSpacing="10dp"  
+	    android:horizontalSpacing="10dp"  
+	    android:columnWidth="90dp"  
+	    android:stretchMode="columnWidth"  
+	    android:gravity="center"  
+	    android:layout_marginTop="5dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
+	    android:layout_marginBottom="50dp"
+	/>  
+</LinearLayout>
+
+    <TextView
+          android:id="@+id/ext_no_video"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:visibility="invisible"
+          android:text="视频列表为空，试试导入外部视频功能"
+          android:textColor="@color/black_75_transparent"
+          android:textSize="15sp" 
+            />
+    
+<Button
+    android:id="@+id/load_video_ext"
+    android:background="@drawable/fm_btn_bg"
+    android:layout_gravity="bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:textSize="13sp"
+    android:textColor="@color/white"
+    android:text="导入外部视频"
+  />
+
+
+
+    </FrameLayout>

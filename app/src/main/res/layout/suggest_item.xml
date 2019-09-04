@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/suggest_text"
+        android:layout_width="fill_parent"
+        android:textSize="16dp"
+        android:background="#f7ede8"
+        android:text="刀塔传奇"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+        android:textColor="@color/actionbar_background"/>
+
+</LinearLayout>

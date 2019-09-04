@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.li.videoapplication.View.RefreshListView
+        android:id="@+id/fragment_colud_video_rlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@null"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/home_network_notice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f8ffd5"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/notice_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="视界那么大，联网才能看~"
+            android:textColor="#46463d"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="160dip"
+        android:background="@drawable/radio_fra_bottom_bg">
+
+        <com.li.videoapplication.View.ViewFlow
+            android:id="@+id/viewflow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/radio_fra_bottom_bg" />
+        　
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:background="@drawable/vf_bg_border"
+            android:gravity="right|center_vertical"
+            android:padding="3dip">
+
+            <com.li.videoapplication.View.CircleFlowIndicator
+                android:id="@+id/viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="2dip"
+                app:activeColor="@color/white"
+                app:activeType="fill"
+                app:circleSeparation="10dip"
+                app:inactiveColor="@color/bg"
+                app:inactiveType="fill"
+                app:radius="3dip" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/play_show_banner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/play_show_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/fm_btn_bg_2"
+            android:scaleType="fitXY" />
+
+        <CheckBox
+            android:id="@+id/play_show_banner_checkbox"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@+id/play_show_banner"
+            android:layout_alignTop="@+id/play_show_banner"
+            android:background="#00000000"
+            android:button="@null"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

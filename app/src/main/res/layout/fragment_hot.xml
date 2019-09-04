@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_body_bg"
+    tools:context="com.li.videoapplication.fragment.HotFragment">
+
+    <!--<com.li.videoapplication.View.RefreshListView-->
+        <!--android:id="@+id/activity_acssort_hot_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:cacheColorHint="@null"-->
+        <!--android:divider="@null"-->
+        <!--android:listSelector="@color/transparent_background"-->
+        <!--android:scrollbars="none"></com.li.videoapplication.View.RefreshListView>-->
+
+    <com.li.videoapplication.View.RefreshListView
+        android:id="@id/id_stickynavlayout_innerscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:horizontalSpacing="10dp"
+        android:scrollbars="none"
+        android:verticalSpacing="4dp"></com.li.videoapplication.View.RefreshListView>
+
+</FrameLayout>

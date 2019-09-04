@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- view的各种状态(正常无焦点,焦点,onclick按下、放开等等) -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中未up时 -->
+    <item android:state_pressed="true"><shape>
+            <stroke android:width="1dp" android:color="@android:color/black" />
+            <!-- 按钮四个圆角 radius:半径 -->
+            <corners android:bottomLeftRadius="5dp" android:bottomRightRadius="5dp" android:radius="0dp" android:topLeftRadius="5dp" android:topRightRadius="5dp" />
+
+            <!-- 渐变 -->
+            <gradient android:angle="90" android:endColor="#202020" android:startColor="#333333" />
+        </shape></item>
+
+    <!-- 焦点 -->
+    <item android:state_focused="true"><shape>
+            <stroke android:width="0dp" android:color="@color/paleturquoise" />
+            <!-- 按钮四个圆角 radius:半径 -->
+            <corners android:bottomLeftRadius="25dp" android:bottomRightRadius="25dp" android:radius="0dp" android:topLeftRadius="25dp" android:topRightRadius="25dp" />
+        </shape></item>
+
+    <!-- 无焦点 -->
+    <item><shape>
+            <stroke android:width="1dp" android:color="@color/black" />
+            <!-- 按钮四个圆角radius:半径 -->
+
+            <corners android:bottomLeftRadius="5dp" android:bottomRightRadius="5dp" android:radius="0dp" android:topLeftRadius="5dp" android:topRightRadius="5dp" />
+            <!-- 渐变 -->
+            <gradient android:angle="90" android:endColor="#414141" android:startColor="#1e1e1e" />
+        </shape></item>
+
+</selector>

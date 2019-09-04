@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/player_head_framelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="160dip"
+        android:background="@drawable/radio_fra_bottom_bg">
+
+        <com.li.videoapplication.View.ViewFlow
+            android:id="@+id/player_head_viewflow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/radio_fra_bottom_bg" />
+        　
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:background="@drawable/vf_bg_border"
+            android:gravity="right|center_vertical"
+            android:padding="3dip">
+
+            <com.li.videoapplication.View.CircleFlowIndicator
+                android:id="@+id/player_head_viewflowindic"
+                app:activeColor="@color/white"
+                app:activeType="fill"
+                app:circleSeparation="10dip"
+                app:inactiveColor="@color/bg"
+                app:inactiveType="fill"
+                app:radius="3dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="2dip" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

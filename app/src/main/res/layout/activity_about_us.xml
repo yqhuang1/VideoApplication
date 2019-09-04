@@ -1,0 +1,440 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_body_bg"
+    android:orientation="vertical"
+    tools:context="com.li.videoapplication.activity.AboutUsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/about_us_titleLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/about_us_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_btn"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/fragment_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于手游视界"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/darkgray"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <ImageView
+                    android:id="@+id/about_us_sysj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/tubiao_sysj" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/about_us_sysj"
+                    android:layout_toRightOf="@+id/about_us_sysj">
+
+                    <ImageView
+                        android:id="@+id/about_us_versionIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/tubiao_version" />
+
+                    <TextView
+                        android:id="@+id/about_us_versionTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/about_us_versionIv"
+                        android:layout_centerVertical="true"
+                        android:padding="3dp"
+                        android:text="V0.0.0"
+                        android:textColor="@color/white"
+                        android:textSize="8sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/darkgray" />
+
+            <LinearLayout
+                android:id="@+id/about_us_functionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector_pic"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/about_us_functionTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="2"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:text="新功能介绍"
+                    android:textColor="@color/about_us_text_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/about_us_function"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="3"
+                    android:drawableRight="@drawable/persion_draw_right"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:text=""
+                    android:textColor="@color/about_us_text_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/darkgray" />
+
+            <LinearLayout
+                android:id="@+id/about_us_websiteLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector_pic"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/about_us_websiteTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="2"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:text="官方网站"
+                    android:textColor="@color/about_us_text_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/about_us_website"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="3"
+                    android:drawableRight="@drawable/persion_draw_right"
+                    android:gravity="end"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/us_website"
+                    android:textColor="@color/about_us_text_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/darkgray" />
+
+            <LinearLayout
+                android:id="@+id/about_us_wechatLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector_pic"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/about_us_wechatTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="2"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:text="微信公众号"
+                    android:textColor="@color/about_us_text_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/about_us_wechat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="3"
+                    android:drawableRight="@drawable/persion_draw_right"
+                    android:gravity="end"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/us_wechat"
+                    android:textColor="@color/about_us_text_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/darkgray" />
+
+            <LinearLayout
+                android:id="@+id/about_us_qqGroupLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector_pic"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/about_us_qqGroupTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="2"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:text="玩家QQ群"
+                    android:textColor="@color/about_us_text_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/about_us_qqGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="3"
+                    android:drawableRight="@drawable/persion_draw_right"
+                    android:gravity="end"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/us_qqGroup"
+                    android:textColor="@color/about_us_text_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/darkgray" />
+
+            <LinearLayout
+                android:id="@+id/about_us_emailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector_pic"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/about_us_emailTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="2"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:text="合作邮箱"
+                    android:textColor="@color/about_us_text_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/about_us_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="3"
+                    android:drawableRight="@drawable/persion_draw_right"
+                    android:gravity="end"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/us_email"
+                    android:textColor="@color/about_us_text_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/darkgray" />
+
+            <LinearLayout
+                android:id="@+id/about_us_recruitmentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector_pic"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/about_us_recruitmentTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="2"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:text="人才招聘"
+                    android:textColor="@color/about_us_text_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/about_us_recruitment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="3"
+                    android:drawableRight="@drawable/persion_draw_right"
+                    android:gravity="end"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/us_recruitemnt"
+                    android:textColor="@color/about_us_text_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/darkgray" />
+
+            <LinearLayout
+                android:id="@+id/about_us_statementLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector_pic"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/about_us_statementTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="2"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:text="隐私及免责声明"
+                    android:textColor="@color/about_us_text_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/about_us_statement"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="3"
+                    android:drawableRight="@drawable/persion_draw_right"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:text=""
+                    android:textColor="@color/about_us_text_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/darkgray" />
+
+            <LinearLayout
+                android:id="@+id/about_us_feedbackLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector_pic"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/about_us_feedbackTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="2"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:text="意见及反馈"
+                    android:textColor="@color/about_us_text_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/about_us_feedback"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="3"
+                    android:drawableRight="@drawable/persion_draw_right"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:text=""
+                    android:textColor="@color/about_us_text_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/darkgray" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

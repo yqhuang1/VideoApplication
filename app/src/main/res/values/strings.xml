@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">手游视界</string>
+    <string name="app_wechat">fmsysj</string>
+    <string name="share_copy">复制连接</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_empty_hint_text">没有数据</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_mission_more">MissionMoreActivity</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_video_play">VideoPlayActivity</string>
+    <string name="title_activity_gift_detail">GiftDetailActivity</string>
+    <string name="title_activity_transcribe">TranscribeActivity</string>
+    <string name="title_activity_personal">PersonalActivity</string>
+    <string name="title_activity_assort">AssortActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_personal_info">PersonalInfoActivity</string>
+    <string name="title_activity_detail_activity">ActivityDetailActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_bussiness">BussinessActivity</string>
+    <string name="title_activity_feed_back">FeedBackActivity</string>
+    <string name="title_activity_feed_back_content">FeedBackContentActivity</string>
+    <string name="userid_found">用户信息已存在，正在跳转登录操作…</string>
+    <string name="logining">使用%s帐号登录中…</string>
+    <string name="auth_cancel">授权操作已取消</string>
+    <string name="auth_error">授权操作遇到错误</string>
+    <string name="auth_complete">授权成功，正在跳转登录操作…</string>
+    <string name="title_activity_down_load">DownLoadActivity</string>
+    <string name="title_activity_new_assort">NewAssortActivity</string>
+    <string name="title_activity_collect">CollectActivity</string>
+    <string name="title_activity_transcribe_upload">TranscribeUploadActivity</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_upload">UploadActivity</string>
+    <string name="title_activity_protect">ProtectActivity</string>
+    <string name="title_activity_set_name">SetNameActivity</string>
+    <string name="title_activity_upload_video">UploadVideoActivity</string>
+
+    <string name="us_website">http://www.17sysj.com</string>//官方网站
+    <string name="us_wechat">fmsysj</string>//微信公众号
+    <string name="us_qqGroup">459419773</string>//玩家qq群
+    <string name="us_email">bd@ifeimo.com</string>//合作邮箱
+    <string name="us_recruitemnt">hr@ifeimo.com</string>//人才招聘
+
+    <string name="bussiness_right_note1">飞磨科技  版权所有</string>
+    <string name="bussiness_right_note2">Copyright@2015 ifeimo All Rights Reserved</string>
+
+    <string name="title_activity_my_gift">MyGiftActivity</string>
+    <string name="march_result_explain">\t\t\t工作人员将会在比赛结束一周内与所有获奖玩家联系，请大家耐心等待。如超过时间依然没有工作人员联系的玩家
+        可私信管理员，查明核实身份后我们将尽快发放奖品。其他没有获奖的参赛选手也不要气馁，下次比赛期待您更精彩的表现
+    ，更多手游、更多礼包，尽在手游视界!</string>
+
+    <string name="using_agreement">1. 飞磨科技服务协议的接受\n
+
+本协议是用户与广州市飞磨科技有限公司（下称“飞磨科技”） 之间的协议（下称“本协议”）， 手游视界作为飞磨科技的运营的产品将严格依照本协议中的服务条款提供服务。如果您不愿意接受本协议的全部条款，您应不使用或主动取消手游视界提供的任何服务。\n
+
+2. 本协议的变更和修改\n
+
+手游视界有权随时对本协议进行修改，手游视界将在相关页面上提示修改的内容；用户如果不同意本协议的修改，可以放弃使用或访问或取消已经获得手游视界的服务；如果用户选择在本协议变更后继续访问或使用手游视界的服务，则视为用户已经接受本协议的修改。\n
+
+3. 服务说明\n
+
+3.1 飞磨科技是一个向广大用户提供上传空间和技术的服务平台，本身不直接生产内容。\n
+
+3.2 手游视界运用自己的系统通过互联网向用户提供服务，除非另有明确规定，增强或强化目前服务的任何新功能，包括新产品以及新增加的服务，均无条件地适用本协议。\n
+
+3.3 手游视界对本协议服务不承担任何责任，不保证服务一定会满足用户的使用要求，也不保证服务不会被中断，对服务的及时性、安全性、准确性也不作担保。\n
+
+4. 用户行为\n
+
+4.1 用户帐号、密码和安全\n
+
+用户一旦注册成功，便成为飞磨科技的合法用户，将得到一个密码和帐号。用户应采取合理措施维护其密码和帐号的安全。用户对利用该密码和帐号所进行的一切活动负全部责任；由该等活动所导致的任何损失或损害由用户承担，手游视界不承担任何责任。\n
+
+用户的密码和帐号遭到未授权的使用或发生其他任何安全问题，用户可以立即通知手游视界，并且用户在每次连线结束，应结束帐号使用，否则用户可能得不到手游视界的安全保护。\n
+
+对于用户长时间未使用的帐号，手游视界有权予以关闭。\n
+
+4.2 用户应遵守以下法律及法规\n
+
+用户同意遵守《中华人民共和国保守国家秘密法》、《中华人民共和国著作权法》、《中华人民共和国计算机信息系统安全保护条例》、《计算机软件保护条例》、《互联网电子公告服务管理规定》、《信息网络传播权保护条例》等有关计算机及互联网规定的法律、法规、实施办法。在任何情况下，手游视界合理地认为用户的行为可能违反上述法律、法规，手游视界可以在任何时候，不经事先通知终止向该用户提供服务。
+
+手游视界欢迎用户举报任何违反上述法律或侵犯他人权利的上传内容，一经发现违法或侵权的上传内容，手游视界将无条件删除。\n
+
+4.3 禁止用户从事以下行为：\n
+
+（1）上传、张贴、发送电子邮件或传送包含任何反对宪法所确定的基本原则、危害国家安全、泄露国家秘密、颠覆国家政权、破坏国家统一、破坏民族团结、损害国家荣誉和利益、煽动民族仇恨、民族歧视、破坏民族团结、破坏国家宗教政策、宣扬邪教和封建迷信、淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪、侮辱或者诽谤他人，侵害他人合法权益的等法律、行政法规禁止的内容或其他另人反感的包括但不限于资讯、资料、文字、软件、音乐、照片、图形、信息或其他资料（以下简称内容）。\n
+
+（2）以任何方式危害未成年人。\n
+
+（3）冒充任何人或机构，或以虚伪不实的方式谎称或使人误认为与任何人或任何机构有关。\n
+
+（4）伪造标题或以其他方式操控识别资料，使人误认为该内容为手游视界所传送。\n
+
+（5）将无权传送的内容（例如内部资料、机密资料）进行上载、张贴、发送电子邮件或以其他方式传送。\n
+
+（6）将侵犯任何人的专利、商标、著作权、商业秘密或其他专属权利之内容加以上载、张贴、发送电子邮件或以其他方式传送。\n
+
+（7）将广告函件、促销资料、"垃圾邮件"等，加以上载、张贴、发送电子邮件或以其他方式传送。供前述目的使用的专用区域除外。\n
+
+（8）将有关干扰、破坏或限制任何计算机软件、硬件或通讯设备功能的软件病毒或其他计算机代码、档案和程序之资料，加以上载、张贴、发送电子邮件或以其他方式传送。\n
+
+（9）干扰或破坏本网站服务或与本网站服务相连的服务器和网络，或不遵守本网站使用之规定。\n
+
+（10）故意或非故意违反任何相关的中国法律、法规、规章、条例等其他具有法律效力的规范。\n
+
+4.4 用户对经由本网站上传、张贴、发送电子邮件或传送的内容承担全部责任\n
+
+对于经由本网站传送的内容，手游视界不保证前述其合法性、正当性、准确性、完整性或品质。用户在接受本网站服务时，有可能会接触到令人不快、不适当或令人厌恶的内容。在任何情况下，手游视界均不对任何内容承担任何责任，包括但不限于任何内容发生任何错误或纰漏以及衍生的任何损失或损害。手游视界有权（但无义务）自行拒绝或删除经由本网站提供的任何内容。用户使用上述内容，应自行承担风险。\n
+
+手游视界有权利在下述情况下，对内容进行保存或披露：\n
+
+（1）法律程序所规定；\n
+
+（2）本服使用协议规定；\n
+
+（3）被侵害的第三人提出权利主张；\n
+
+（4）为保护手游视界、其使用者及社会公众的权利、财产或人身安全。\n
+
+（5）其他手游视界认为有必要的情况。\n
+
+4.5 对用户信息的存储和限制\n
+
+手游视界不对用户所发布信息的删除或储存失败承担责任。手游视界有权判断用户的行为是否符合本网站使用协议条款之规定，如果手游视界认为用户违背了协议条款的规定，手游视界有终止向其提供网站服务的权利。\n
+
+5. 用户隐私权制度\n
+
+当用户注册手游视界的服务时，用户须提供个人信息。手游视界收集个人信息的目的是为用户提供尽可能多的个人化网上服务以及为广告商提供一个方便的途径来接触到适合的用户，并且可以发送具有相关性的内容和广告。在此过程中，广告商绝对不会接触到用户的个人信息。手游视界不会在未经合法用户授权时，公开、编辑或透露其个人信息及保存在手游视界中的非公开内容，除非有下列情况：\n
+
+（1）有关法律规定或手游视界合法服务程序规定。\n
+
+（2）在紧急情况下，为维护用户及公众的权益；\n
+
+（3）为维护手游视界的商标权、专利权及其他任何合法权益；\n
+
+（4）其他需要公开、编辑或透露个人信息的情况。\n
+
+在以下（包括但不限于）几种情况下，手游视界有权使用用户的个人信息：\n
+
+（1）在进行促销或抽奖时，手游视界可能会与赞助商共享用户的个人信息，在这些情况下手游视界会在发送用户信息之前进行提示，并且用户可以通过不参与来终止传送过程。\n
+
+（2）手游视界可以将用户信息与第三方数据匹配。\n
+
+（3）手游视界会通过透露合计用户统计数据，向未来的合作伙伴、广告商及其他第三方以及为了其他合法目的而描述手游视界的服务。\n
+
+（4）用户购买在手游视界列出的商品或服务时，手游视界获得的信息及用户提供的信息（例如用户的信用卡号和联系信息）会提供给商家，这些商家会进行数据收集操作，但手游视界对商家的此种操作不负任何责任。\n
+
+（5）手游视界会向用户发送关于手游视界不同产品和服务的信息或者手游视界认为用户会感兴趣的其他产品和服务。如果用户不希望收到这样的邮件，只需在提供个人信息时或其他任何时候告知手游视界即可。另外，手游视界会竭尽全力保护用户的信息，但手游视界不能确信或保证任何个人信息的安全性，用户须自己承担风险。
+
+手游视界将遵循由：中国广告协会互动网络分会颁布的《中国互联网定向广告用户信息保护框架标准》，基于合法、合理和诚实信用的法定原则妥善处理或使用用户的个人信息。\n
+
+6. 关于用户在飞磨科技上传或发布的内容：\n
+
+6.1用户上传的内容是指用户在本网站上传或发布的视频或其它任何形式的内容包括文字、图片、音频等。\n
+
+6.2除非手游视界收到相反通知，手游视界将用户视为其在本网站上传或发布的内容的版权拥有人。用户在本网站上传或发布内容即视为其同意授予手游视界所有上述内容的在全球范围内的免费、不可撤销的无限期的并且可转让的非独家使用权许可，手游视界有权展示、散布及推广前述内容，有权对前述内容进行任何形式的复制、修改、出版、发行及以其他方式使用或者授权第三方进行复制、修改、出版、发行及以其他方式使用。\n
+
+6.3因用户进行上述内容在本网站的上传或发布，而导致任何第三方提出索赔要求或衍生的任何损害或损失，由用户承担全部责任。\n
+
+7. 关于第三方链接\n
+
+本网站服务可能会提供与其他国际互联网网站或资源进行链接。对于前述网站或资源是否可以利用，手游视界承担担保责任。因使用或依赖上述网站或资源所生的损失或损害，手游视界也不负担任何责任。\n
+
+8. 手游视界的知识产权及其他权利\n
+
+8.1 手游视界对本网站服务及本网站所使用的软件所包含的受知识产权或其他法律保护的资料享有相应的权利；除用户依法享有之版权之内容之外，本网站的整体内容版权归手游视界所有。\n
+
+8.2 经由本网站传送的视频及其它内容，受到著作权法、商标法、专利法或其他法律的保护；除该等视频及其它内容上载的用户所享有的版权，未经手游视界明示授权许可，其他用户不得进行修改、出租、散布或衍生其他作品。\n
+
+8.3 用户对本网站所使用的软件有非专属性使用权，但不得自行或许可任何第三方复制、修改、出售或衍生产品。\n
+
+8.4本网站所有设计图样以及其他图样、产品及服务名称，均为手游视界及/或其关联公司所享有的商标、标识。任何人不得使用、复制或用作其他用途。\n
+
+8.5 手游视界对其专有内容、原创内容和其他通过授权取得的独占或则独家内容享有完全知识产权。未经手游视界许可，任何单位和个人不得私自转载、传播和提供观看服务或者有其他侵犯手游视界知识产权的行为。否则，将承担法律责任。\n
+
+9. 免责声明\n
+
+9.1 手游视界对于任何自本网站而获得的他人的信息、内容或者广告宣传等任何资讯（以下统称“信息”），不保证真实、准确和完整性。如果任何单位或者个人通过上述“信息”而进行任何行为，须自行甄别真伪和谨慎预防风险，否则，无论何种原因，本网站不对任何非与本网站直接发生的交易和/或行为承担任何直接、间接、附带或衍生的损失和责任。\n
+
+9.2 手游视界有权但无义务，改善或更正本网站任何部分之任何疏漏、错误。\n
+
+9.3 手游视界不保证（包括但不限于）：\n
+
+（1）本网站适合用户的使用要求；\n
+
+（2）本网站不受干扰，及时、安全、可靠或不出现错误；\n
+
+（3）用户经由本网站取得的任何产品、服务或其他材料符合用户的期望。\n
+
+9.4 用户使用经由本网站下载的或取得的任何资料，其风险自行负担；因该等使用导致用户电脑系统损坏或资料流失，用户应负完全责任；\n
+</string>
+
+    <string-array name="faceArray">
+        <item>face01</item>
+        <item>face02</item>
+        <item>face03</item>
+        <item>face04</item>
+        <item>face05</item>
+        <item>face06</item>
+        <item>face07</item>
+        <item>face08</item>
+        <item>face09</item>
+        <item>face10</item>
+        <item>face11</item>
+        <item>face12</item>
+        <item>face13</item>
+        <item>face14</item>
+        <item>face15</item>
+        <item>face16</item>
+        <item>face17</item>
+        <item>face18</item>
+        <item>face19</item>
+        <item>face20</item>
+        <item>face21</item>
+        <item>face22</item>
+        <item>face23</item>
+        <item>face24</item>
+        <item>face25</item>
+        <item>face26</item>
+        <item>face27</item>
+        <item>face28</item>
+        <item>face29</item>
+        <item>face30</item>
+        <item>face31</item>
+        <item>face32</item>
+        <item>face33</item>
+        <item>face34</item>
+    </string-array>
+
+    <string-array name="faceCnArray">
+        <item>微笑</item>
+        <item>害羞</item>
+        <item>卖萌</item>
+        <item>偷笑</item>
+        <item>送花</item>
+        <item>大笑</item>
+        <item>唱歌</item>
+        <item>飞吻</item>
+        <item>抚摸</item>
+        <item>憨笑</item>
+        <item>加油</item>
+        <item>开心</item>
+        <item>很棒</item>
+        <item>吻</item>
+        <item>喜爱</item>
+        <item>奸笑</item>
+        <item>思考</item>
+        <item>号外</item>
+        <item>计算下</item>
+        <item>钱吖</item>
+        <item>想到</item>
+        <item>鬼脸</item>
+        <item>萌萌的</item>
+        <item>再见</item>
+        <item>流口水</item>
+        <item>白日梦</item>
+        <item>流鼻血</item>
+        <item>惊讶</item>
+        <item>冥想</item>
+        <item>摸不着头脑</item>
+        <item>疑问</item>
+        <item>郁闷</item>
+        <item>傲慢</item>
+        <item>小气</item>
+    </string-array>
+
+    //新表情
+    <string-array name="expressionArray">
+        <item>expression01</item>
+        <item>expression02</item>
+        <item>expression03</item>
+        <item>expression04</item>
+        <item>expression05</item>
+        <item>expression06</item>
+        <item>expression07</item>
+        <item>expression08</item>
+        <item>expression09</item>
+        <item>expression10</item>
+        <item>expression11</item>
+        <item>expression12</item>
+        <item>expression13</item>
+        <item>expression14</item>
+        <item>expression15</item>
+        <item>expression16</item>
+        <item>expression17</item>
+        <item>expression18</item>
+        <item>expression19</item>
+        <item>expression20</item>
+        <item>expression21</item>
+        <item>expression22</item>
+        <item>expression23</item>
+        <item>expression24</item>
+        <item>expression25</item>
+        <item>expression26</item>
+        <item>expression27</item>
+        <item>expression28</item>
+        <item>expression29</item>
+        <item>expression30</item>
+        <item>expression31</item>
+        <item>expression32</item>
+        <item>expression33</item>
+        <item>expression34</item>
+    </string-array>
+
+    <string-array name="expressionCnArray">
+        <item>笑脸</item>
+        <item>热情</item>
+        <item>眨眼</item>
+        <item>色</item>
+        <item>接吻</item>
+        <item>亲吻</item>
+        <item>脸红</item>
+        <item>露齿笑</item>
+        <item>满意</item>
+        <item>戏弄</item>
+        <item>吐舌</item>
+        <item>无语</item>
+        <item>得意</item>
+        <item>汗</item>
+        <item>失望</item>
+        <item>低落</item>
+        <item>呸</item>
+        <item>焦虑</item>
+        <item>担心</item>
+        <item>震惊</item>
+        <item>悔恨</item>
+        <item>眼泪</item>
+        <item>哭</item>
+        <item>破涕为笑</item>
+        <item>晕</item>
+        <item>恐惧</item>
+        <item>生气</item>
+        <item>睡觉</item>
+        <item>生病</item>
+        <item>心</item>
+        <item>心碎</item>
+        <item>强</item>
+        <item>弱</item>
+        <item>鼓掌</item>
+    </string-array>
+
+    <string name="title_activity_favor_recommend">FavorRecommendActivity</string>
+    <string name="title_activity_offline_download">OfflineDownloadActivity</string>
+    <string name="title_activity_feed_back_umeng">FeedBackUmeng</string>
+
+
+    <!--<string name="fm_app_name">超级录录</string>-->
+    <!--<string name="fm_str_text">更改文件名为：</string>-->
+    <!--<string name="fm_app_name_pro">录屏专业版</string>-->
+    <!--<string name="fm_open_using">请选择应用打开</string>-->
+    <!--<string name="fm_file_no_data">没有可用的文件</string>-->
+    <!--<string name="fm_my_feed">我的反馈</string>-->
+    <!--<string name="fm_my_feed_has_reply">您的反馈收到回复</string>-->
+    <!--<string name="fm_back">返回</string>-->
+    <!--<string name="fm_input_your_comment">请输入您的评论&amp;反馈</string>-->
+    <!--<string name="fm_submit">提交</string>-->
+    <!--<string name="fm_name">姓名</string>-->
+    <!--<string name="fm_tip">提示</string>-->
+    <!--<string name="fm_mobile">手机</string>-->
+    <!--<string name="fm_system_setting">系统设置</string>-->
+    <!--<string name="fm_display_method">显示方式</string>-->
+    <!--<string name="fm_about_slogan">我们的专注只为了您有更好的体验</string>-->
+    <!--<string name="fm_everything_you_want_write_here">拼凑零碎时间，移动改变生活。</string>-->
+    <!--<string name="fm_work_group_name">Hiandroid工作室</string>-->
+    <!--<string name="fm_setting_feedback_bugs">反馈软件问题</string>-->
+    <!--<string name="fm_setting_check_update">检查更新</string>-->
+    <!--<string name="fm_setting_about">关于</string>-->
+    <!--<string name="fm_faq">常见问题</string>-->
+    <!--<string name="fm_version_mark">Release</string>-->
+    <!--<string name="fm_already_download">下载中</string>-->
+    <!--<string name="fm_buy_no_ad_version">购买专业版</string>-->
+    <!--<string name="fm_cant_buy_no_google_play">您可以从Google Play专业版本。</string>-->
+    <!--<string name="fm_error">错误</string>-->
+    <!--<string name="fm_screenshot_setting">录制屏幕设置</string>-->
+    <!--<string name="fm_screenshot_setting_1">基本设置</string>-->
+    <!--<string name="fm_hide_notify_screenshot">隐藏通知栏</string>-->
+    <!--<string name="fm_show_notify_item_in_notify_bar">隐藏通知栏显示的录屏栏</string>-->
+    <!--<string name="fm_falter_screenshot">通过摇晃录屏</string>-->
+    <!--<string name="fm_cancel_record_sound">录制声音</string>-->
+
+    <!--<string name="fm_falter_screenshot_tip">摇晃开始和停止录屏</string>-->
+    <!--<string name="fm_cancel_record_sound_tip">选择是否录制声音</string>-->
+    <!--<string name="fm_play_screenshot_sound">取消播放软件声音</string>-->
+    <!--<string name="fm_play_screenshot_sound_tip">取消播放录屏软件声音</string>-->
+    <!--<string name="fm_bak_record_channel">使用备用通道</string>-->
+    <!--<string name="fm_bak_record_channel_tip">正常录制不成功时选择</string>-->
+    <!--<string name="fm_explorer_and_storage">录制设置</string>-->
+    <!--<string name="fm_screenshot_pic_explorer">视频存放地址</string>-->
+    <!--<string name="fm_help_and_about">帮助和关于</string>-->
+    <!--<string name="fm_about_mine">关于我们</string>-->
+    <!--<string name="fm_about__tip">Hiandroid工作室</string>-->
+    <!--<string name="fm_how_to_use_this_app">使用帮助</string>-->
+    <!--<string name="fm_how_to_use_this_app_tip">如何使用本软件</string>-->
+    <!--<string name="fm_buy_from_google_play">从Google Play购买无限制全功能专业版</string>-->
+    <!--<string name="fm_take_anywhere_to_screenshot">录制屏幕提示</string>-->
+    <!--<string name="fm_screenshot_done">完成</string>-->
+    <!--<string name="fm_screenshot_tuya">涂鸦</string>-->
+    <!--<string name="fm_full_screenshot">开始录屏</string>-->
+    <!--<string name="fm_screenshot_cancel">取消</string>-->
+    <!--<!- <string name="screenshot_started">通知栏录屏已启动</string>-->
+    <!--<string name="click_start_screenshot">点击开始录屏</string>-->-->
+    <!--<string name="fm_screenshot_started">启动录屏服务</string>-->
+    <!--<string name="fm_click_start_screenshot">录屏服务已启动</string>-->
+    <!--<string name="fm_screenshot_failure">截图失败。</string>-->
+    <!--<string name="fm_your_mobile_no_root">您的手机没有Root</string>-->
+    <!--<string name="fm_root_your_mobile">Root本手机</string>-->
+    <!--<string name="fm_inner_app_shot">应用内截图</string>-->
+    <!--<string name="fm_screenshot_save_success">保存成功。</string>-->
+    <!--<string name="fm_explorer_screenshot">录屏预览</string>-->
+    <!--<string name="fm_downloading">下载中…</string>-->
+    <!--<string name="fm_new_function_index">新功能导航</string>-->
+    <!--<string name="fm_login_and_taste">进入体验</string>-->
+    <!--<string name="fm_action_bar_share_with">Share With</string>-->
+    <!--<string name="fm_download_done_installing">下载完成，正在安装…</string>-->
+    <!--<string name="fm_no_sdcard_cant_download_and_install">没有SDCard，不能下载安装APK文件。</string>-->
+    <!--<string name="fm_start_download">开始下载.</string>-->
+    <!--<string name="fm_downloading_done_per">正在下载，已完成</string>-->
+    <!--<string name="fm_perhaps_download_please_wait">准备下载中，请稍后…</string>-->
+    <!--<string name="fm_you_need_root">您需要获得Root权限才能使用本软件。</string>-->
+    <!--<string name="fm_app_root">申请权限</string>-->
+    <!--<string name="fm_rotation">旋转</string>-->
+    <!--<string name="fm_enlarge">放大</string>-->
+    <!--<string name="fm_narrow">缩小</string>-->
+    <!--<string name="fm_save">保存</string>-->
+
+    <!--<string name="fm_share_to_email_title">来自Android版ScreenREC的录屏分享</string>-->
+    <!--<string name="fm_share_def_content">-->
+    <!--<![CDATA[<a href="http://www.hianzuo.com/ScreenREC" target="_blank">ScreenREC</a> 用户给您分享了一段录屏视频。]]>-->
+    <!--</string>-->
+    <!--<string name="fm_about_root_phone">关于Root手机</string>-->
+    <!--<string name="fm_about_i_screenshot">关于ScreenREC</string>-->
+    <!--<string name="fm_setting_check_update_tip">获取最新版本</string>-->
+    <!--<string name="fm_vote_comment_tip">喜欢就投我们一票吧。谢谢！</string>-->
+    <!--<string name="fm_vote_comment_btn">投票及评论</string>-->
+    <!--<string name="fm_test_version_label">发布版本：</string>-->
+    <!--<string name="fm_version_your_is_new">你的应用程序是最新的</string>-->
+    <!--<string name="fm_version_label">版本代码：</string>-->
+    <!--<string name="fm_version_checking">检查中…</string>-->
+    <!--<string name="fm_version_new_found">一个新的版本被发现</string>-->
+    <!--<string name="fm_version_update">更新</string>-->
+    <!--<string name="fm_version_you_must_update">您必须更新最新版本</string>-->
+    <!--<string name="fm_confirm_exit">你确定要退出这个程序？</string>-->
+    <!--<string name="fm_your_network_unavailable">你的网络不可用</string>-->
+    <!--<string name="fm_sure">确定</string>-->
+    <!--<string name="fm_cancel">取消</string>-->
+    <!--<string name="fm_loading">载入中…</string>-->
+    <!--<string name="fm_setting_network">网络设置</string>-->
+    <!--<string name="UMEmptyFbNotAllowed">请输入您的反馈意见。</string>-->
+    <!--<string name="UMContentTooLong">您的内容超过140个字符。</string>-->
+    <!--<string name="UMFbList_ListItem_State_ReSend">失败，请重新发送</string>-->
+    <!--<string name="UMFbList_ListItem_State_Sending">发送…</string>-->
+    <!--<string name="UMFbList_ListItem_State_Resending">重发</string>-->
+    <!--<string name="UMFbList_ListItem_State_Fail">失败</string>-->
+    <!--<string name="UMFb_Atom_State_Fail">失败</string>-->
+    <!--<string name="UMFb_Atom_State_Sending">发送…</string>-->
+    <!--<string name="UMFb_Atom_State_Resend">失败，请重新发送，这将</string>-->
+    <!--<string name="UMFeedbackUmengTitle">反馈</string>-->
+    <!--<string name="UMFeedbackListTitle">我要留言</string>-->
+    <!--<string name="UMFeedbackConversationTitle">我要留言</string>-->
+    <!--<string name="UMFeedbackTitle">你写的每一个字，将有利于我们。</string>-->
+    <!--<string name="UMFeedbackContent">输入您的建议，在这里</string>-->
+    <!--<string name="UMFeedbackSummit">提交</string>-->
+    <!--<string name="UMFeedbackGoBack">返回</string>-->
+    <!--<string name="UMFeedbackGotIt">明白了</string>-->
+    <!--<string name="UMFeedbackSeeDetail">详细</string>-->
+    <!--<string name="UMViewThread">查看主题</string>-->
+    <!--<string name="UMNewReplyAlertTitle">您已经得到了回复</string>-->
+    <!--<string name="UMDeleteThread">删除主题</string>-->
+    <!--<string name="UMViewFeedback">查看留言</string>-->
+    <!--<string name="UMDeleteFeedback">删除反馈</string>-->
+    <!--<string name="UMResendFeedback">重新发送反馈</string>-->
+    <!--<string name="UMDeleteMsg">删除邮件</string>-->
+    <!--<string name="UMNewReplyFlick">有新的回复</string>-->
+    <!--<string name="UMNewReplyTitle">有新的回复</string>-->
+    <!--<string name="UMNewReplyHint">点击查看</string>-->
+    <!--<string-array name="UMgenderList">-->
+    <!--<item>性别</item>-->
+    <!--<item>男士</item>-->
+    <!--<item>女士</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="UMageList">-->
+    <!--<item>年龄</item>-->
+    <!--<item>&lt;18</item>-->
+    <!--<item>18~24</item>-->
+    <!--<item>25~30</item>-->
+    <!--<item>31~35</item>-->
+    <!--<item>36~40</item>-->
+    <!--<item>41~50</item>-->
+    <!--<item>51~59</item>-->
+    <!--<item>>=60</item>-->
+    <!--</string-array>-->
+
+    <!--<string name="fm_more_item_select_color">选择颜色</string>-->
+    <!--<string name="fm_more_item_select_transparent">选择透明度</string>-->
+    <!--<string name="fm_more_item_select_line_weight">选择线条粗细</string>-->
+    <!--<string name="fm_more_item_title">更多</string>-->
+    <!--<string name="fm_more_item_emboss">浮雕</string>-->
+    <!--<string name="fm_more_item_blur">模糊</string>-->
+    <!--<string name="fm_more_item_set_blur_value">设置模糊值</string>-->
+    <!--<string name="fm_more_item_erase">擦除</string>-->
+    <!--<string name="fm_please_select_transparent">请选择透明值</string>-->
+    <!--<string name="fm_please_select_line_weight">请选择线条粗细</string>-->
+    <!--<string name="fm_save_image_format">录制视频大小选择</string>-->
+    <!--<string name="fm_image_format_summary">默认为屏幕大小</string>-->
+    <!--<string name="fm_image_compress">视频质量</string>-->
+    <!--<string name="fm_image_compress_1">声音视频同步调节</string>-->
+    <!--<string name="fm_please_select_image_compress">请选择压缩比例</string>-->
+    <!--<string name="fm_please_select_blur_value">请选择模糊值</string>-->
+    <!--<string name="fm_float_screenshot">浮动按钮</string>-->
+    <!--<string name="fm_float_screenshot_tip">显示上一个截图按钮在屏幕上</string>-->
+    <!--<string name="fm_modify_path">修改路径</string>-->
+    <!--<string name="fm_select_all">全选</string>-->
+    <!--<string name="fm_delete_all">全部清除</string>-->
+    <!--<string name="fm_clearing">正在清理</string>-->
+    <!--<string name="fm_delete_selected_file">删除选定</string>-->
+    <!--<string name="fm_invert_selection_file">反选</string>-->
+    <!--<string name="fm_please_input_path">请输入路径</string>-->
+    <!--<string name="fm_dir_not_exist">目录是不存在</string>-->
+    <!--<string name="fm_dir_not_exist_or_not_write">目录不存在或无法写入的目录</string>-->
+    <!--<string name="fm_actual_size">还原</string>-->
+    <!--<string name="fm_paint">涂鸦</string>-->
+    <!--<string name="fm_no_root_mobile_un_narmal">只有ROOT过的手机能录屏，请先ROOT您的手机，您可以点击ROOT手机按钮，以获得更多的关于ROOT手机的信息。</string>-->
+    <!--<string name="fm_vote_this_app">评分和评论</string>-->
+    <!--<string name="fm_share">分享</string>-->
+    <!--<string name="fm_share_to_friend">分享给朋友</string>-->
+    <!--<string name="fm_share_tip_content">你想分享截图你的朋友吗？</string>-->
+    <!--<string name="fm_select_app_to_open">选择的应用程序打开</string>-->
+    <!--<string name="fm_language">语言</string>-->
+    <!--<string name="fm_other">其他</string>-->
+    <!--<string name="fm_click_end_record">单击停止录屏</string>-->
+    <!--<string name="fm_image_compress_1_summary">声音和视频不同步可通过这个参数调节</string>-->
+    <!--<string name="fm_image_compress_summary">调节录屏后视频质量（值越小，质量越好）</string>-->
+    <!--<string name="fm_orig_size">原始大小</string>-->
+    <!--<string name="fm_rs_quality_normal">普通</string>-->
+    <!--<string name="fm_gen_video_tip">生成视频提示</string>-->
+    <!--<string name="fm_run_back">后台执行</string>-->
+    <!--<string name="fm_gen_video_ing">正在生成视频</string>-->
+    <!--<string name="fm_gen_video_ing_1">正在合成视频文件中，请稍后…</string>-->
+    <!--<string name="fm_jindu">进度</string>-->
+    <!--<string name="fm_record_done">录屏完成</string>-->
+    <!--<string name="fm_click_to_open_record_file">点击打开录屏文件</string>-->
+    <!--<string name="fm_gen_video_done">录制结束</string>-->
+    <!--<string name="fm_record_done_and_click_open"><![CDATA[视频已合成，点击预览即可打开<br/>]]></string>-->
+    <!--<string name="fm_preview">预览</string>-->
+    <!--<string name="fm_share_to_firend">分享给朋友</string>-->
+    <!--<string name="fm_slelct_to_share">选择应用分享</string>-->
+    <!--<string name="fm_record_tip">录屏提示</string>-->
+    <!--<string name="fm_record_tip_content"><![CDATA[录屏时，手机可能会发热。如果您觉得这有损您的设备，请立即停止。<br/>]]></string>-->
+    <!--<string name="fm_continue_record">继续录屏</string>-->
+    <!--<string name="fm_cancel_record">取消录屏</string>-->
+    <!--<string name="fm_app_tip">应用提示</string>-->
+    <!--<string name="fm_about_root">关于ROOT</string>-->
+    <!--<string name="fm_app_root_failure">申请Root权限失败，请重启应用重新申请。</string>-->
+    <!--<string name="fm_unsupport_tip_content">-->
+    <!--<![CDATA[您的设备不能使用这款应用，<br/>您可以点击 支持设备 按钮<br/>查看可以使用这个应用的设备列表。]]></string>-->
+    <!--<string name="fm_support_device">支持设备</string>-->
+    <!--<string name="fm_current_value">当前值：</string>-->
+    <!--<string name="fm_how_to_start_record">如何开始录屏</string>-->
+    <!--<string name="fm_i_know">我知道了</string>-->
+    <!--<string name="fm_dont_show_again">不再显示</string>-->
+    <!--<string name="fm_please_select">请选择应用</string>-->
+    <!--<string name="fm_video_orientation">横竖屏选择</string>-->
+    <!--<string name="fm_video_orientation_tip">输出电脑上播放的视频为横屏(手机播放为竖屏)</string>-->
+    <!--<string name="fm_tril_count_is_over">试用版次数已经用完，请使用专业版，现在购买，只需19.9元。</string>-->
+    <!--<string name="fm_get_pro_version">购买专业版</string>-->
+    <!--<string name="fm_no_google_play_in_your_mobile">您的设备中没有安装Google Play。</string>-->
+    <!--<string name="fm_record_speed">录制速度</string>-->
+    <!--<string name="fm_record_speed_summary">根据您的手机配置设置录制速度(推荐值:200–500)。</string>-->
+    <!--<string name="fm_please_select_value">请选择一个值</string>-->
+    <!--<string name="fm_restart">重启应用</string>-->
+    <!--<string name="fm_can_play_mp4_tip">如果您不能在设备中播放视频，我们建议您使用MXPlayer</string>-->
+    <!--<string name="fm_download_mx_player">下载MXPlayer</string>-->
+    <!--<string name="fm_no_sdcard_to_store_mp4">请插入SDcard，然后重启应用录屏。</string>-->
+    <!--<string name="fm_make_sure_delete_all">您确实要删除存储文件夹下面的所有MP4文件吗？</string>-->
+    <!--<string name="fm_synthesis_failure">在您的设备上合成视频失败，这可能是因为你手机的系统内核或者CPU不支持造成的。</string>-->
+    <!--<string name="fm_sound_too_short">录制声音时间太短，请重试。</string>-->
+    <!--<string name="fm_move_too_short">录制视频时间太短，请重试。</string>-->
+    <!--<string-array name="fm_image_format">-->
+    <!--<item>340x600</item>-->
+    <!--<item>240x420</item>-->
+    <!--<item>原始大小</item>-->
+    <!--</string-array>-->
+    <!--<string name="fm_start_record">开始录制屏幕</string>-->
+    <!--<string name="fm_stop_record">停止录制屏幕</string>-->
+    <!--<string name="fm_quality_of_video">录制视频画质选择</string>-->
+    <!--<string name="fm_quality_of_video_tip">默认标准，请按机器性能合理选择</string>-->
+
+    <!--<string name="fm_video_draw">视频渲染修正</string>-->
+    <!--<string name="fm_video_draw_tip">视频渲染效果差时选择此项</string>-->
+    <!--<string name="fm_color_fix">视频颜色修正</string>-->
+    <!--<string name="fm_color_fix_tip">视频颜色不对时选择此项</string>-->
+    <!--<string name="fm_where_use">视频帧率选择</string>-->
+    <!--<string name="fm_where_use_tip">选择不同的视频帧率,默认15fps</string>-->
+    <!--<string name="fm_custom_fps">自定义帧率</string>-->
+
+    <!--<string name="fm_standard">标准</string>-->
+    <!--<string name="fm_vivid">清晰</string>-->
+    <!--<string name="fm_high_definition">高清</string>-->
+
+    <!--<string name="fm_select_fps_summary">请滑动进度选择一个适当的视频帧率录制</string>-->
+    <!--<string name="fm_please_uninstall_trail_app">您已经安装了录屏专业版，请卸载试用版，谢谢！</string>-->
+    <!--<string name="fm_uninstall">卸载试用版</string>-->
+    <!--<string name="fm_hide_water_float">隐藏显示水印</string>-->
+    <!--<string name="fm_hide_water_float_tip">录制视频时不显示水印</string>-->
+    <!--<string name="fm_fm_device_code">手机唯一码</string>-->
+    <!--<string name="fm_fm_select_touches_from_developer">请从开发者选项中选择显示触控对象</string>-->
+    <!--<string name="fm_copy">复制</string>-->
+    <!--<string-array name="fm_where_use_array">-->
+    <!--<item>应用(15fps)</item>-->
+    <!--<item>游戏(18fps)</item>-->
+    <!--<item>电影(24fps)</item>-->
+    <!--<item>自定义帧率</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="fm_quality_of_video_value">-->
+    <!--<item>0</item>-->
+    <!--<item>1</item>-->
+    <!--<item>2</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="fm_quality_of_video_array">-->
+    <!--<item>流畅</item>-->
+    <!--<item>标准</item>-->
+    <!--<item>高清</item>-->
+    <!--</string-array>-->
+
+
+    <!--<string-array name="fm_video_orientation_tip_array">-->
+    <!--<item>竖屏</item>-->
+    <!--<item>横屏</item>-->
+    <!--<item>横屏(翻转)</item>-->
+    <!--<item>竖屏(翻转)</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="fm_video_orientation_tip_array_value">-->
+    <!--<item>0</item>-->
+    <!--<item>1</item>-->
+    <!--<item>2</item>-->
+    <!--<item>3</item>-->
+    <!--</string-array>-->
+
+    <!--<string name="fm_buy_from_alipay">使用支付宝购买。</string>-->
+    <!--<string name="fm_on_trail_hide_water_float_tip">此功能只有专业版能使用，请购买专业版。，现在购买，只需19.9元。</string>-->
+    <!--<string name="fm_download_noroot_version">NoROOT版本</string>-->
+    <!--<string name="fm_no_root_tip_content">-->
+    <!--<![CDATA[由于您的设备没有获得ROOT权限，<br/>不能使用这款应用。<br/>请下载我们的NoROOT版本！]]></string>-->
+    <!--<string name="fm_record_failure_tip">-->
+    <!--<![CDATA[合成失败！请尝试以下几种办法解决，<br/>　1、重启您的设备<br/>　2、卸载其他录屏软件<br/>　3、从设置选择其他视频解码器]]></string>-->
+    <!--<string name="fm_visual_feedback_for_touches">显示触控对象的视觉反馈</string>-->
+    <!--<string name="fm_show_touches">显示触感反馈</string>-->
+    <!--<string name="fm_video_quality">视频质量选择</string>-->
+    <!--<string name="fm_video_quality_tip">选择以控制录制文件大小和视频质量</string>-->
+    <!--<string-array name="fm_video_quality_array">-->
+    <!--<item>文件最小</item>-->
+    <!--<item>一般</item>-->
+    <!--<item>标准</item>-->
+    <!--<item>较好</item>-->
+    <!--<item>质量最好</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="fm_video_quality_value">-->
+    <!--<item>0</item>-->
+    <!--<item>1</item>-->
+    <!--<item>2</item>-->
+    <!--<item>3</item>-->
+    <!--<item>4</item>-->
+    <!--</string-array>-->
+    <!--<string name="fm_audio_quality">声音质量选择</string>-->
+    <!--<string name="fm_audio_quality_tip">选择以控制文件大小和声音质量</string>-->
+    <!--<string-array name="fm_audio_quality_array">-->
+    <!--<item>文件最小</item>-->
+    <!--<item>一般</item>-->
+    <!--<item>标准</item>-->
+    <!--<item>较好</item>-->
+    <!--<item>质量最好</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="fm_audio_quality_value">-->
+    <!--<item>0</item>-->
+    <!--<item>1</item>-->
+    <!--<item>2</item>-->
+    <!--<item>3</item>-->
+    <!--<item>4</item>-->
+    <!--</string-array>-->
+    <!--<string name="fm_video_encoder">视频解码器选择</string>-->
+    <!--<string name="fm_video_encoder_tip">录制的视频效果不好时，请选择</string>-->
+    <!--<string-array name="fm_video_encoder_array">-->
+    <!--<item>视频解码器(H264)</item>-->
+    <!--<item>视频解码器(MPEG)</item>-->
+    <!--<item>视频解码器(FFMPEG)</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="fm_video_encoder_value">-->
+    <!--<item>0</item>-->
+    <!--<item>1</item>-->
+    <!--<item>2</item>-->
+    <!--</string-array>-->
+
+
+    <!--<string name="fm_re_try">重试</string>-->
+    <!--<string name="fm_no_license_access_alipay">付费应用，您需要购买后才能使用。现在购买，只需19.9元。</string>-->
+    <!--<string name="fm_no_license_access_google">付费应用，您需要购买后才能使用，您可以从Google Play购买。</string>-->
+    <!--<string name="fm_buy_from_market">购买</string>-->
+    <!--<string name="fm_download_pro_version">下载专业版</string>-->
+    <!--<string name="fm_pro_version_is_downloading">录屏专业版下载中</string>-->
+    <!--<string name="fm_tip_next">下次提示</string>-->
+    <!--<string name="fm_con_buy_success">恭喜您！已经购买成功。</string>-->
+    <!--<string name="fm_buyer_please_download">您已经是购买用户，请下载专业版使用。</string>-->
+    <!--<string name="fm_check_license_error">检查许可证时发生错误，请联系管理员。</string>-->
+    <!--<string name="fm_please_login_google_account">如果从Google Play购买，请在设备上登录购买时的Google账号</string>-->
+    <!--<string name="fm_the_license_server_unable">检查许可证失败，这可能会因为服务在请求阶段不可用而发生，请重试</string>-->
+
+</resources>

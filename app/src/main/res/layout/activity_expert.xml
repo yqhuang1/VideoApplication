@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_body_bg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/activity_expert_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_btn"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/fragment_back" />
+
+        <TextView
+            android:id="@+id/activity_expert_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="达人榜"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/darkgray" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/activity_expert_rl_tab"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.li.videoapplication.View.SyncHorizontalScrollView
+                android:id="@+id/activity_expert_mHsv"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="@color/white"
+                android:fadingEdge="none"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:id="@+id/activity_expert_rl_nav"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top">
+
+                    <RadioGroup
+                        android:id="@+id/activity_expert_rg_nav_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/white"
+                        android:orientation="horizontal"></RadioGroup>
+
+                    <ImageView
+                        android:id="@+id/activity_expert_iv_nav_indicator"
+                        android:layout_width="60dp"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/main_title_bg"
+                        android:scaleType="matrix" />
+                </RelativeLayout>
+            </com.li.videoapplication.View.SyncHorizontalScrollView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/activity_expert_mHsv"
+                android:background="@color/search_result_default" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_expert_mViewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/activity_expert_rl_tab"
+        android:layout_gravity="center"
+        android:background="@color/main_body_bg"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

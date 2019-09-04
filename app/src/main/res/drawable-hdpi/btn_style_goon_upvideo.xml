@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fm_video_editor_activity调用 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    fm_share_activity.xml引用此文件 
+    效果：默认状态红色，点击效果灰色
+    -->
+    <!-- 选中未up时 -->
+    <item android:state_pressed="true"><shape>
+            <stroke android:width="0dp" android:color="@android:color/white" />
+            <!--
+	        	按钮四个圆角
+	        	radius:半径
+            -->
+            <corners android:bottomLeftRadius="25dp" android:bottomRightRadius="25dp" android:radius="0dp" android:topLeftRadius="25dp" android:topRightRadius="25dp" />
+            <!-- 按钮文字和边缘距离(内边距) -->
+            <padding android:bottom="-4dp" android:left="1dp" android:right="1dp" android:top="-4dp" />
+
+            <solid android:color="@color/grey" />
+        </shape></item>
+
+    <!-- 焦点 -->
+    <item android:state_focused="true"><shape>
+            <stroke android:width="0dp" android:color="@color/paleturquoise" />
+            <!--
+	        	按钮四个圆角
+	        	radius:半径
+            -->
+            <corners android:bottomLeftRadius="4dp" android:bottomRightRadius="4dp" android:radius="0dp" android:topLeftRadius="4dp" android:topRightRadius="4dp" />
+
+            <!-- 按钮文字和边缘距离(内边距) -->
+            <padding android:bottom="-4dp" android:left="1dp" android:right="1dp" android:top="-4dp" />
+        </shape></item>
+
+    <!-- 无焦点 -->
+    <item><shape>
+            <stroke android:width="1dp" android:color="@color/white" />
+            <!-- 按钮四个圆角radius:半径 -->
+
+            <corners android:bottomLeftRadius="25dp" android:bottomRightRadius="25dp" android:radius="0dp" android:topLeftRadius="25dp" android:topRightRadius="25dp" />
+            <!-- 按钮文字和边缘距离(内边距) -->
+            <padding android:bottom="-41dp" android:left="0dp" android:right="0dp" android:top="-41dp" />
+
+            <solid android:color="#ff5656" />
+        </shape></item>
+
+</selector>

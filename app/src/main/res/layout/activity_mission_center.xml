@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_body_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/activity_mission_center_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_btn"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/fragment_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的任务"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/darkgray"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_mission_center_login_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/activity_mission_center_drawright_Iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:padding="25dp"
+            android:src="@drawable/persion_draw_right" />
+
+        <com.li.videoapplication.View.CircularImage
+            android:id="@+id/activity_mission_center_head_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/persional_image_default"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/activity_mission_center_person_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/activity_mission_center_head_img"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/activity_mission_center_person_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/activity_mission_center_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxEms="8"
+                    android:singleLine="true"
+                    android:text="Iron Man"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/activity_mission_center_sex_Iv"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/activity_mission_center_name_tv"
+                    android:background="@drawable/sex_person_male"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/activity_mission_center_degree_tv"
+                    android:layout_width="30dp"
+                    android:layout_height="13dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/activity_mission_center_sex_Iv"
+                    android:background="@drawable/corner_yellow_stroke"
+                    android:gravity="center"
+                    android:text="Lv.0"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/activity_mission_center_question_Iv"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/activity_mission_center_degree_tv"
+                    android:background="@drawable/questionmark" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_mission_center_experience_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_mission_center_person_layout">
+
+                <ProgressBar
+                    android:id="@+id/activity_mission_center_experience_pb"
+                    style="@style/progressBarHorizontal_experience"
+                    android:layout_width="90dp"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:max="100"
+                    android:progress="30" />
+
+                <TextView
+                    android:id="@+id/activity_mission_center_experience_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/activity_mission_center_experience_pb"
+                    android:text="xx/xxx"
+                    android:textColor="@color/persion_title_color"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_mission_center_experience_layout"
+                android:layout_marginTop="5px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/activity_mission_center_focus_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关注"
+                    android:textColor="@color/persion_title_color"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/darkgray" />
+
+                <TextView
+                    android:id="@+id/activity_mission_center_fans_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="粉丝"
+                    android:textColor="@color/persion_title_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ExpandableListView
+        android:id="@+id/activity_mission_center_elv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/stroke"
+        android:childDivider="#dfdfdf"
+        android:divider="#dfdfdf"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"
+        android:scrollbars="none"></ExpandableListView>
+
+</LinearLayout>

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_body_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_body_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/activity_detail_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/home_ad_default_bg"
+                    android:scaleType="fitXY" />
+
+                <Button
+                    android:id="@+id/activity_detail_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/corner_alpha_stroke"
+                    android:padding="5dp"
+                    android:text="下载此游戏"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/activity_detail_img"
+                    android:background="#40000000"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/activity_detail_activityname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="活动名称"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/activity_detail_noteTX"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/activity_detail_activityname"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="注意事项："
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/activity_detail_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/activity_detail_activityname"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/activity_detail_noteTX"
+                        android:text="详情"
+                        android:textColor="@color/darkorange"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/activity_detail_endtimeTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/activity_detail_note"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toLeftOf="@+id/activity_detail_endtime"
+                        android:text="结束时间："
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/activity_detail_endtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/activity_detail_endtimeTV"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="10dp"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:text="2015-12-30 888888888"
+                        android:textColor="@color/darkorange"
+                        android:textSize="13sp" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/activity_detail_resume_Rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/activity_detail_resume_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="活动简介"
+                        android:textColor="@color/video_play_tv_focus"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/activity_detail_resume_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="5px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/video_play_tv_focus" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/activity_detail_rule_Rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/activity_detail_rule_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="参与方式"
+                        android:textColor="@color/video_play_tv_default"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/activity_detail_rule_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="5px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/video_play_tv_focus"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/activity_detail_reward_Rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/activity_detail_reward_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="活动奖励"
+                        android:textColor="@color/video_play_tv_default"
+                        android:textSize="13sp" />
+
+
+                    <ImageView
+                        android:id="@+id/activity_detail_reward_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="5px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/video_play_tv_focus"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/activity_detail_winners_Rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/activity_detail_winners_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="获奖名单"
+                        android:textColor="@color/video_play_tv_default"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/activity_detail_winners_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="5px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/video_play_tv_focus"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:background="@color/line" />
+
+            <com.li.videoapplication.View.MyScrollView
+                android:id="@+id/activity_detail_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/white"
+                android:scrollbars="none">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/activity_detail_resume"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="活动简介"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/activity_detail_reward"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="活动奖励"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/activity_detail_rule"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="活动规则"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/activity_detail_winners"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="获奖名单"
+                        android:visibility="gone" />
+                </FrameLayout>
+            </com.li.videoapplication.View.MyScrollView>
+
+            <Button
+                android:id="@+id/activity_detail_join_Btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner_red_stroke"
+                android:gravity="center"
+                android:text="活动状态"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FFFFFF" />
+
+            <RelativeLayout
+                android:id="@+id/activity_detail_entries_RL"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/activity_detail_entries_title_iv"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/main_title_bg" />
+
+                <TextView
+                    android:id="@+id/activity_detail_entries_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/activity_detail_entries_title_iv"
+                    android:text="参赛作品"
+                    android:textColor="@color/list_bg"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alter_dialog_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/alter_answer_dialog_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/alter_answer_dialog_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dp"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:text=""
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/alter_answer_dialog_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/cancel_button" />
+    </RelativeLayout>
+
+</LinearLayout>

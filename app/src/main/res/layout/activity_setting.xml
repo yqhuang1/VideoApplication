@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_body_bg"
+    android:orientation="vertical"
+    tools:context="com.li.videoapplication.activity.SettingActivity">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/setting_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_btn"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/fragment_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="应用设置"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/darkgray"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/setting_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editbg"
+        android:drawableLeft="@drawable/icon_funset"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="功能设置"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/setting_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/editbg"
+        android:drawableLeft="@drawable/ico_info"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="关于我们"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/setting_update_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/editbg"
+        android:drawableLeft="@drawable/ico_ref"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ico_ref"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="检查更新"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/setting_version_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical"
+            android:text="当前版本V1.0.4"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

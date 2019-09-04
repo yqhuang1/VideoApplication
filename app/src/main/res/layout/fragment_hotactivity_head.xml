@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_body_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fragment_hotactivity_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/fragment_hotactivity_head_Tv1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_shape"
+                android:gravity="center"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:text="xx"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/fragment_hotactivity_head_Tv2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_shape"
+                android:gravity="center"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:text="xx"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/fragment_hotactivity_head_Tv3"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_shape"
+                android:gravity="center"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:text="xx"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/fragment_hotactivity_head_Tv4"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_shape"
+                android:gravity="center"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:text="xx"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

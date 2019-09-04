@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_body_bg"
+    android:orientation="vertical"
+    tools:context=".SearchResultActivity">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/search_result_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_btn"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/fragment_back" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_search_result_et_rl"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="20dp">
+
+            <RelativeLayout
+                android:id="@+id/search_result_edt_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/fragment_search_result_et_iv"
+                android:background="@drawable/search_store_left_gray">
+
+                <AutoCompleteTextView
+                    android:id="@+id/search_result_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@color/main_body_bg"
+                    android:hint="请输入搜索内容"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray2"
+                    android:textCursorDrawable="@drawable/cursor_shape"
+                    android:textSize="15sp" />
+
+
+                <ImageView
+                    android:id="@+id/search_result_cancel"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="3dp"
+                    android:src="@drawable/fm_select_cancle"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/fragment_search_result_et_iv"
+                android:layout_width="0px"
+                android:layout_height="35dp"
+                android:layout_toLeftOf="@+id/search_result_btn_layout"
+                android:background="@color/search_et_bg" />
+
+            <RelativeLayout
+                android:id="@+id/search_result_btn_layout"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/search_store_right_gray">
+
+                <ImageView
+                    android:id="@+id/search_result_btn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/selector_pic"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/searchfoundgray" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/search_result_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="搜索结果"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/search_result_record"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/search_btn"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/main_record_ic_red"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/darkgray" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/search_rl_tab"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <com.li.videoapplication.View.SyncHorizontalScrollView
+                android:id="@+id/search_mHsv"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="@color/white"
+                android:fadingEdge="none"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:id="@+id/search_rl_nav"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top">
+
+                    <RadioGroup
+                        android:id="@+id/search_rg_nav_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/white"
+                        android:orientation="horizontal"></RadioGroup>
+
+                    <ImageView
+                        android:id="@+id/search_iv_nav_indicator"
+                        android:layout_width="60dp"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/main_title_bg"
+                        android:scaleType="matrix" />
+
+                </RelativeLayout>
+            </com.li.videoapplication.View.SyncHorizontalScrollView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/search_mHsv"
+                android:background="@color/search_result_default" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/search_mViewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/rl_tab"
+        android:layout_gravity="center"
+        android:background="@color/main_body_bg"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

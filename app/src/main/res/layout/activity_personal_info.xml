@@ -1,0 +1,239 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_body_bg"
+    android:orientation="vertical"
+    tools:context="com.li.videoapplication.activity.PersonalInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/person_info_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_btn"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/fragment_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人资料"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/darkgray"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <com.li.videoapplication.View.StickyNavLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/id_stickynavlayout_topview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <com.li.videoapplication.View.CircularImage
+                android:id="@+id/person_info_head_img"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/persional_image_default"
+                android:scaleType="centerCrop" />
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/person_info_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignTop="@+id/person_info_head_img"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_toRightOf="@+id/person_info_head_img"-->
+            <!--android:text="称号:"-->
+            <!--android:textSize="15dp" />-->
+
+            <RelativeLayout
+                android:id="@+id/head_layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/person_info_head_img"
+                android:layout_toRightOf="@+id/person_info_head_img"
+                android:padding="2dp">
+
+                <RelativeLayout
+                    android:id="@+id/person_info_person_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/person_info_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:maxEms="10"
+                        android:singleLine="true"
+                        android:text="昵称"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/person_info_sex_Iv"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/person_info_name_tv"
+                        android:background="@drawable/sex_person_male"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/person_info_degree_tv"
+                        android:layout_width="30dp"
+                        android:layout_height="13dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/person_info_sex_Iv"
+                        android:background="@drawable/corner_yellow_stroke"
+                        android:gravity="center"
+                        android:text="Lv.0"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/person_info_exp_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/person_info_person_layout">
+
+                    <ProgressBar
+                        android:id="@+id/person_info_exp_pb"
+                        style="@style/progressBarHorizontal_experience"
+                        android:layout_width="80dp"
+                        android:layout_height="6dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray1"
+                        android:max="100"
+                        android:progress="30"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/person_info_exp_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/person_info_exp_pb"
+                        android:text="xx/xxx"
+                        android:textColor="@color/persion_title_color"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/activity_persion_focus_tv"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/person_info_head_img"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/focus_tv_bg"
+                android:gravity="center"
+                android:text="+关注"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/head_layout1"
+                android:layout_below="@+id/head_layout1"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="5px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/persion_info_focus_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关注"
+                    android:textColor="@color/persion_title_color" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/darkgray" />
+
+                <TextView
+                    android:id="@+id/persion_info_fans_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="粉丝"
+                    android:textColor="@color/persion_title_color" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/personal_info_signature_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_info_head_img"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="这家伙很懒，什么都没留下。"
+                android:textColor="@color/persion_title_color" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/darkgray" />
+
+        <com.li.videoapplication.View.SimpleViewPagerIndicator
+            android:id="@id/id_stickynavlayout_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffffff"></com.li.videoapplication.View.SimpleViewPagerIndicator>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_stickynavlayout_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/main_body_bg"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+
+    </com.li.videoapplication.View.StickyNavLayout>
+</LinearLayout>

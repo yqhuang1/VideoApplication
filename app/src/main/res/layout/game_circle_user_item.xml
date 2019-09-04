@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <com.li.videoapplication.View.CircularImage
+            android:id="@+id/game_circle_user_item_flag"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"></com.li.videoapplication.View.CircularImage>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="90dp"
+            android:layout_toRightOf="@+id/game_circle_user_item_flag"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/game_circle_user_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/game_circle_user_item_video_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="视频0"
+                    android:singleLine="true"
+                    android:textColor="@color/persion_title_color"/>
+                <TextView
+                    android:id="@+id/game_circle_user_item_fans_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="粉丝0"
+                    android:singleLine="true"
+                    android:textColor="@color/persion_title_color"
+                    android:layout_toRightOf="@+id/game_circle_user_item_video_tv"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/game_circle_user_item_rank_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="等级1"
+                    android:singleLine="true"
+                    android:textColor="@color/persion_title_color"
+                    android:layout_toRightOf="@+id/game_circle_user_item_fans_tv"
+                    android:layout_marginLeft="10dp"/>
+                </RelativeLayout>
+
+            <TextView
+                android:id="@+id/game_circle_user_item_manifesto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/persion_title_color"
+                android:text="生活不简单，尽量简单过"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/game_circle_user_item_focus_tv"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:text="+关注"
+                android:textColor="@color/search_result_focus"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:background="@drawable/unfocus_stroke_bg" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>

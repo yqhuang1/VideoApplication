@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/like_game_item_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/like_game_item_cb"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                style="@style/CustomCheckboxTheme"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/like_game_item_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="赛车跑酷"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

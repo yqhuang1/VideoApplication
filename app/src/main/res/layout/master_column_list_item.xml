@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/list_selector_pic">
+
+        <com.li.videoapplication.View.CircularImage
+            android:id="@+id/master_column_list_item_flag"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"></com.li.videoapplication.View.CircularImage>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="80dp"
+            android:layout_toRightOf="@+id/master_column_list_item_flag"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/master_column_list_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/master_column_list_item_manifesto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/persion_content_color"
+                android:text=""
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/master_column_list_item_focus_tv"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:text="+关注"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:background="@drawable/focus_tv_bg" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/darkgray" />
+</LinearLayout>

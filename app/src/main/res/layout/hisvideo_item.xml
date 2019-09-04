@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/hisvideo_item_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_selector_pic"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/hisvideo_item_img"
+                android:layout_width="120dp"
+                android:layout_height="72dp"
+                android:layout_marginLeft="2dp"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="18dp"
+                android:layout_alignBottom="@+id/hisvideo_item_img"
+                android:background="#40000000"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hisvideo_item_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/hisvideo_item_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="2dp"
+                android:lines="2"
+                android:text="视频名称"
+                android:textColor="#535353" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp">
+
+                <TextView
+                    android:id="@+id/hisvideo_item_flower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/player_love_bg"
+                    android:drawablePadding="5dp"
+                    android:text="0"
+                    android:textColor="#bfbfbf"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/hisvideo_item_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/hisvideo_item_flower"
+                    android:drawableLeft="@drawable/player_commet_bg"
+                    android:drawablePadding="5dp"
+                    android:text="0"
+                    android:textColor="#bfbfbf"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/hisvideo_item_playcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:drawableLeft="@drawable/player_play_bg"
+                    android:drawablePadding="5dp"
+                    android:text="0"
+                    android:textColor="#bfbfbf"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line" />
+
+</LinearLayout>

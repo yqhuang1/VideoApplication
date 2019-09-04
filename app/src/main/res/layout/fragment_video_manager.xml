@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--视频管理 本地视频 截图-->
+    <ListView
+        android:id="@+id/fragment_video_manager_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#edeef0"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"></ListView>
+
+</LinearLayout>

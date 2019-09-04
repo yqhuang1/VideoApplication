@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fm_share_button_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_color_gray"
+    android:orientation="vertical">
+
+    <!-- 分享activity -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/fm_share_linerarlayout_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/search_btn"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/fragment_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="视频分享"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/darkgray"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:background="#f6f6f6"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fm_upvideo_edito_frame_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="0dp">
+
+            <!-- 视频编辑框 -->
+
+            <LinearLayout
+                android:id="@+id/fm_upvideo_edito_frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/fm_sharefileimage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/fm_play_bg"
+                    android:padding="0.5px"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/fm_sharefilesize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:text="视频大小：28MB"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/fm_goto_editovideo"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:alpha="0.4"
+                    android:background="@color/white"
+                    android:text="编辑"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <!-- 上传进度框 -->
+
+            <LinearLayout
+                android:id="@+id/fm_upvideo_progress_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/fm_upvideo_progress_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="正在上传  0%" />
+
+                <TextView
+                    android:id="@+id/fm_upvideo_finish_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="0M /0M " />
+
+                <LinearLayout
+                    android:id="@+id/fm_upvidoe_progressbar_linear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ProgressBar
+                        android:id="@+id/fm_upvidoe_progressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="180dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/fm_stopupvideo_image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/fm_cancel_button" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fm_goon_upvideo_linear"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/btn_style_goon_upvideo"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="继续上传"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标题:" />
+
+                <EditText
+                    android:id="@+id/fm_share_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:alpha="0.6"
+                    android:background="@color/white"
+                    android:hint="请输入视频标题"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textCursorDrawable="@drawable/cursor_shape"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/lightgrey" />
+
+            <LinearLayout
+                android:id="@+id/fm_goto_select_game_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_selector_linearlayout"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类型:" />
+
+                <TextView
+                    android:id="@+id/fm_select_game_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="10"
+                    android:alpha="0.4"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="请选视频类型"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/fm_triangle_arrow"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/triangle_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/lightgrey" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="视频描述 : \n（选填）" />
+
+                <EditText
+                    android:id="@+id/fm_share_describe_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginRight="10dp"
+                    android:alpha="0.6"
+                    android:background="@color/white"
+                    android:hint=""
+                    android:maxLines="3"
+                    android:paddingLeft="10dp"
+                    android:textCursorDrawable="@drawable/cursor_shape"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/lightgrey" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightgrey" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f6f6f6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/fm_share_participate_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="参加活动" />
+
+            <com.li.videoapplication.View.MyListView
+                android:id="@+id/fm_share_participate_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/lightgray"
+                android:dividerHeight="1px"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="@color/lightgrey" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/fm_share_noshare_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_pic"
+                    android:gravity="center"
+                    android:text="暂不分享" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="@color/lightgrey" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fccf53">
+
+                <TextView
+                    android:id="@+id/fm_share_doshare_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_pic"
+                    android:gravity="center"
+                    android:text="保存并分享"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/fm_share_popwindowstart_view"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="@color/lightgrey" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

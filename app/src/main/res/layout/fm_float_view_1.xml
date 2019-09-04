@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/float_view_RL"
+    android:layout_width="45dp"
+    android:layout_height="45dp" >
+
+    <RelativeLayout
+        android:layout_width="45dp"
+        android:layout_height="45dp" >
+
+        <ImageView
+            android:id="@+id/background1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fm_float_ico" />
+    </RelativeLayout>
+
+</RelativeLayout>

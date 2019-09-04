@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability= "blocksDescendants"
+    android:gravity="center"
+     >
+
+     <FrameLayout
+       	android:layout_width="wrap_content"
+   		android:layout_height="130dp"
+	        >
+    <ImageView
+        android:id="@+id/list_ImageView_ext"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+         />
+      <ImageView
+	        android:layout_marginTop="10dp"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:layout_gravity="center"
+	        android:background="@drawable/fm_play_normal"
+	         />
+    </FrameLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+	<TextView 
+    	android:id="@+id/list_TextView_ext"
+    	android:textSize="12sp"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="56464"
+ 	  	 />
+	<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/video_time_ext"
+		    android:textSize="12sp"
+		    android:layout_marginTop="3dp"
+		    android:text="time"
+	    />
+  
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_marginTop="4dp"
+		    android:layout_height="35dp"
+		    android:orientation="horizontal" >
+
+			<Button 
+				android:id="@+id/bt_upload_ext"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="13sp"
+				android:focusable = "false"
+				android:textColor="@color/white"
+				android:background="@drawable/fm_btn_bg"
+				android:text="上传"
+				/>
+			
+			<Button 
+				android:id="@+id/bt_del_ext"
+				android:layout_marginLeft="8dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="13sp"
+				android:focusable = "false"
+				android:background="@drawable/fm_btn_bg"
+				android:textColor="@color/white"
+				android:text="删除"
+				/>
+		 </LinearLayout>
+	</LinearLayout>
+</LinearLayout>
